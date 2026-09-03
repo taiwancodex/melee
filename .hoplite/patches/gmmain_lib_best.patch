@@ -1,0 +1,23 @@
+diff --git a/src/melee/gm/gmmain_lib.c b/src/melee/gm/gmmain_lib.c
+index dfbb823ca..dbc9be020 100644
+--- a/src/melee/gm/gmmain_lib.c
++++ b/src/melee/gm/gmmain_lib.c
+@@ -806,8 +806,16 @@ s32 gmMainLib_8015DBF4(s32 arg0)
+ 
+     config = gmMainLib_8015CDC8();
+     config_all = (struct gmMainLib_8015DBF4_config*) config;
+-    base = (struct gmMainLib_8015DBF4_base*) &config_all->unk_530.unk_588[0];
+-    gmMainLib_AdjustNameTag(&config->x4, (u8) arg0);
++    base = (struct gmMainLib_8015DBF4_base*) &gmMainLib_804D3EE0->unk_530.unk_588[0];
++    {
++        u8* tag_ptr = (u8*) ((s8*) config + 4);
++
++        if (*tag_ptr == (u8) arg0) {
++            *tag_ptr = GM_NAMETAG_NONE;
++        } else if (*tag_ptr > (u8) arg0 && *tag_ptr != GM_NAMETAG_NONE) {
++            *tag_ptr = *tag_ptr - 1;
++        }
++    }
+     ADJ_NAMETAG_78(gmMainLib_804D3EE0->unk_522.x4);
+     ADJ_NAMETAG_78(gmMainLib_804D3EE0->unk_528.x4);
+     ADJ_NAMETAG_78(config_all->unk_530.x4);

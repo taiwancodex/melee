@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "ports": {
+    "preview": 3000,
+    "additional": {}
+  },
+  "scripts": {
+    "setup": {
+      "enabled": true,
+      "command": "set -e\ncommand -v qemu-i386-static >/dev/null 2>&1 || {\n  apt-get update -qq && apt-get install -y -qq qemu-user-static; }\ncommand -v ninja >/dev/null 2>&1 || {\n  apt-get update -qq && apt-get install -y -qq ninja-build; }\nmkdir -p build/tools build/compilers\n[ -x build/tools/wibo ] || {\n  curl -sSL -m 300 -o build/tools/wibo https://github.com/decompals/wibo/releases/download/0.7.0/wibo\n  chmod +x build/tools/wibo; }\n[ -x build/tools/wibo-qemu ] || {\n  printf \"%s\n\" \"#!/bin/sh\" \"exec qemu-i386-static \\\"$(dirname \"$0\")/wibo\\\" \\\"$@\\\"\" > build/tools/wibo-qemu\n  chmod +x build/tools/wibo-qemu; }\n[ -d build/compilers/GC ] || {\n  curl -sSL -m 600 -o build/compilers.zip https://files.decomp.dev/compilers_20251118.zip\n  (cd build/compilers && unzip -q ../compilers.zip); }\n[ -x build/tools/binutils/powerpc-eabi-objdump ] || {\n  curl -sSL -m 300 -o build/binutils.zip https://github.com/encounter/gc-wii-binutils/releases/download/2.42-2/linux-x86_64.zip\n  mkdir -p build/tools/binutils\n  unzip -q -o build/binutils.zip -d build/tools/binutils\n  chmod +x build/tools/binutils/*; }"
+    },
+    "run": {
+      "enabled": true,
+      "command": null
+    },
+    "archive": {
+      "enabled": true,
+      "command": null
+    },
+    "check": {
+      "enabled": true,
+      "command": null
+    }
+  },
+  "mcpServers": []
+}

@@ -1,0 +1,22 @@
+diff --git a/src/melee/ft/chara/ftCommon/ftCo_ItemThrow.c b/src/melee/ft/chara/ftCommon/ftCo_ItemThrow.c
+index 548085779..1dcffa612 100644
+--- a/src/melee/ft/chara/ftCommon/ftCo_ItemThrow.c
++++ b/src/melee/ft/chara/ftCommon/ftCo_ItemThrow.c
+@@ -548,7 +548,6 @@ void ftCo_80095EFC(Fighter_GObj* gobj)
+                     float table_speed;
+                     float base_throw_speed;
+                     float throw_speed;
+-                    interpolation = fp->mv.co.itemthrow4.x8.x;
+                     fsm = getItemThrowFsm(fsm, fp);
+                     throw_speed_arr = (ftCo_ItemThrowAttrs*) Fighter_804D6550;
+                     velocity_multiplier =
+@@ -559,7 +558,8 @@ void ftCo_80095EFC(Fighter_GObj* gobj)
+                     base_throw_speed = velocity_multiplier * table_speed;
+                     throw_scale *= base_throw_speed;
+                     throw_speed = throw_scale;
+-                    interpolation = fsm * (interpolation - vec0.x) + vec0.x;
++                    interpolation = fsm * (fp->mv.co.itemthrow4.x8.x - vec0.x)
++                        + vec0.x;
+                     vec2.x = interpolation;
+                     interpolation =
+                         fsm * (fp->mv.co.itemthrow4.x8.y - vec0.y) + vec0.y;
