@@ -39,11 +39,25 @@ def find_fn_defs(lines):
                     brace_line = None
                 if brace_line is not None:
                     header = "".join(lines[i:last_paren_line + 1])
+                    # include preceding type/qualifier lines (e.g. a
+                    # "static inline void" on its own line) so the
+                    # keep-check sees them
+                    prefix_start = i
+                    k = i - 1
+                    while k >= 0 and (i - k) <= 3:
+                        prev = lines[k].strip()
+                        if (not prev or prev.startswith(("//", "/*", "*"))
+                                or any(c in prev for c in ";{}")):
+                            break
+                        prefix_start = k
+                        k -= 1
+                    header_full = ("".join(lines[prefix_start:i]) + header)
                     m = re.search(r"(\w+)\s*\(", header)
                     name = m.group(1) if m else None
                     if name and not name.startswith(("if", "for", "while",
                                                      "switch", "return")):
-                        yield i, last_paren_line, brace_line, brace_col, name
+                        yield (i, last_paren_line, brace_line, brace_col,
+                               name, header_full)
                         i = brace_line
         i += 1
 

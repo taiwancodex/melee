@@ -15,16 +15,12 @@ sys.path.insert(0, ".hoplite")
 from build_perm_base_lib import find_fn_defs, brace_end  # noqa: E402
 
 
-def main():
-    (jobdir, src, fn, start_re, end_re) = sys.argv[1:6]
-    job = Path(jobdir)
-    text = Path(src).read_text(encoding="utf-8")
-    lines = text.splitlines(keepends=True)
-
+def strip(lines, keep_names):
     out = []
     pos = 0
     kept = set()
-    for (h_start, h_end, b_line, b_col, name) in list(find_fn_defs(lines)):
+    for (h_start, h_end, b_line, b_col, name,
+         header_full) in list(find_fn_defs(lines)):
         if h_start < pos:
             continue
         out.extend(lines[pos:h_start])
@@ -34,7 +30,8 @@ def main():
             pos = len(lines)
             break
         header = "".join(lines[h_start:h_end + 1])
-        keep = (name == fn or re.match(r"(static|inline)\b", header.strip()))
+        keep = (name in keep_names or
+                re.match(r"(static|inline)\b", header_full.strip()))
         if keep:
             out.extend(lines[h_start:end + 1])
             kept.add(name)
@@ -42,9 +39,42 @@ def main():
             out.append(header.rstrip() + ";\n")
         pos = end + 1
     out.extend(lines[pos:])
-    stripped = "".join(out)
+    return "".join(out), kept
+
+
+def main():
+    (jobdir, src, fn, start_re, end_re) = sys.argv[1:6]
+    job = Path(jobdir)
+    text = Path(src).read_text(encoding="utf-8")
+    lines = text.splitlines(keepends=True)
+
+    stripped, kept = strip(lines, {fn})
     if fn not in kept:
         sys.exit(f"target function {fn} not found/kept")
+
+    # MWCC auto-inlines non-static file-local callees in the full TU; keep
+    # every defined function whose name appears in the target body (plus
+    # transitively, via a fixed point over kept bodies).
+    extra = set(kept)
+    while True:
+        body = []
+        cur = None
+        for (h_start, h_end, b_line, b_col, name,
+             header_full) in list(find_fn_defs(lines)):
+            if name in extra:
+                end = brace_end(lines, b_line, b_col)
+                if end is not None:
+                    body.append("".join(lines[h_start:end + 1]))
+        blob = "\n".join(body)
+        names = set(re.findall(r"\b([A-Za-z_][A-Za-z0-9_]*)\b", blob))
+        all_defs = {n for (h, e, b, c, n, hf) in find_fn_defs(lines)}
+        new = (names & all_defs) - extra
+        if not new:
+            break
+        extra |= new
+    stripped, kept = strip(lines, extra)
+    if fn not in kept:
+        sys.exit(f"target function {fn} lost on second pass")
 
     m = re.search(start_re, stripped, re.M)
     if not m:
