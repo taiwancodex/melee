@@ -27,6 +27,24 @@ target order but breaks 45 other instructions — proof, not a fix).
 
 ## Active targets (permuter grinds)
 
+### _Toy_8030E110 — DROPPED (upstream collision)
+Open PR #3310 "Work on toy" (2026-09-04) hand-matches _Toy_8030E110 and the
+other toy near-misses (decl reorders + `uintptr_t keys` hoists — the same
+variant family the permuter explores). Grinding it would duplicate an active
+upstream PR; revisit only if #3310 stalls or closes unmatched.
+
+### gm_80182174 (gmregclear) — PARKED, 5-hunk residual
+After fixing the base (see TU pipeline notes below), the UNSTRIPPED cpp TU
+compiles within 5 hunks of the full-file build: one struct (accessed via a
+lis/addi-materialized global) has fields +60 off vs the real build; the r31
+-based struct is exact. The stripped TU adds ~14 more. Diagnosis artifacts in
+build/hoplite/perm_gmreg2/. Not worth further cycles while other targets are
+open; revisit with the fixed pipeline insights.
+
+### _tyDisplay_80319994 (tydisplay) — NEW 4th grind, validated
+Gate 1 (stripped TU == full-file codegen) passes exactly after the __FILE__
+fix below; gate 2 leaves the real 6-hunk delta for the permuter.
+
 ### ftCo_80095EFC (ftCo_ItemThrow) — CLOSE, best live track
 Delta was a pure FPR swap: `lfs f1,0x89c` (frame_speed_mul, inside
 getItemThrowFsm) and `lfs f0,0x2348` (x8.x) came out f0/f1 swapped.
@@ -53,6 +71,24 @@ fix likely needs a source construct outside all of these.
 
 ## Permuter hard-won lessons
 
+- TU generation via system cpp needs THREE fixes to match MWCC's own
+  preprocessing (each caused silent codegen divergence caught by gate 1):
+  1. `-D__MWERKS__ -D__POWERPC__ -U__GNUC__ -U__clang__` so headers take
+     the MWCC branch (no `__attribute__`, no `_Static_assert`).
+  2. `-DMUST_MATCH` — the project guards `#pragma pack(push,1)` regions with
+     it; without the define, packed structs (e.g. TmData) silently unpack and
+     every downstream field offset shifts.
+  3. `sed -E 's/__assert\("[^"]*\//__assert("/g'` on the cpp output — MWCC's
+     `__FILE__` is the bare basename, GCC's is the full path; assert strings
+     from inlined header helpers land in the target's string pool, so the
+     path form changes pool contents, offsets, and register pressure.
+- Functions whose bodies contain assert macros are structurally unmatchable
+  by single-function stripping (assert strings live in the whole-TU string
+  pool; removing other functions shifts pool offsets). mnStageSw_80236CBC
+  was rejected for this reason. Always grep the target body for asserts
+  before building a job.
+- MWCC's own `-P` .i output cannot be recompiled by MWCC itself (file-scope
+  assert-struct expansions rejected); it is only useful as a diff reference.
 - ALWAYS run with `--stack-diffs`: the scorer ignores stack offsets by
   default and records frame-shifting candidates (new local → +4 byte
   slot) as "improvements" that can never match.
