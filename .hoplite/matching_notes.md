@@ -41,9 +41,16 @@ lis/addi-materialized global) has fields +60 off vs the real build; the r31
 build/hoplite/perm_gmreg2/. Not worth further cycles while other targets are
 open; revisit with the fixed pipeline insights.
 
-### _tyDisplay_80319994 (tydisplay) — NEW 4th grind, validated
-Gate 1 (stripped TU == full-file codegen) passes exactly after the __FILE__
-fix below; gate 2 leaves the real 6-hunk delta for the permuter.
+### _tyDisplay_80319994 (tydisplay) — PARKED, permuter rewriter bug
+The job is fully validated (gate 1 exact after the __FILE__ and MUST_MATCH
+fixes; 6-hunk real delta vs original), but decomp-permuter's AST rewriter
+mis-nests the helper's pointer arithmetic — it rewrites
+`(T*) ((size_t) base + pivot * sizeof(T) + K)` into
+`sizeof((T) (+K))`, an invalid cast of a literal to a struct, so the base
+candidate never compiles and the permuter falls back to the wrong function.
+Neither joining the expression to one line nor swapping the multiplication
+order avoids the fold. Artifacts in build/hoplite/perm_tydsp/. Needs a
+permuter-side fix or a codegen-neutral re-expression; revisit then.
 
 ### ftCo_80095EFC (ftCo_ItemThrow) — CLOSE, best live track
 Delta was a pure FPR swap: `lfs f1,0x89c` (frame_speed_mul, inside
