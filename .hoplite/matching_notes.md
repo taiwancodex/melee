@@ -27,27 +27,21 @@ target order but breaks 45 other instructions — proof, not a fix).
 
 ## Active targets (permuter grinds)
 
-### 2026-09-05 morning: the upstream wave took all three prior targets
-- ftCo_80095EFC — MATCHED UPSTREAM (#3325, 01:24). The "cleanup" PR grew
-  into a full match hours after we vetted it as non-conflicting.
-- lbColl_80006094 — MATCHED UPSTREAM (#3315, 01:10), as predicted.
-- fn_80180630 (gmregclear) — CLAIMED by open WIP PR #3338, which splits the
-  whole unit into gm_17C0/17E4/17EB/180A/181A. Grind dropped.
-- fn_8018AA74 (gmtoulib) — CLAIMED by open PR #3329 (body hunks inside the
+### 2026-09-05 afternoon: pool at 23 units / 36 functions
+- fn_80179990 (gmresultplayer) — CLAIMED by open PR #3343 (body hunks in the
   exact function). Grind dropped.
-Lesson: at this upstream pace, re-check open PRs before every relaunch.
+- fn_8018AA74 (gmtoulib) — #3329 merged but only IMPROVED it to 99.949%;
+  left as the contributor's active territory. Same for fn_80180630
+  (gmregclear, #3338 split left it at 99.966%). Both avoided as
+  just-touched units whose authors typically follow up.
 
-### fn_8019D1BC (gmtou_2) — NEW grind, validated
-99.828%, no upstream activity. Gate 1 exact; 15-hunk real delta.
+### fn_8019D1BC (gmtou_2) — CONTINUED grind
+99.828%, still unclaimed (separate unit from gmtoulib). Session floor 140.
 
-### fn_80179990 (gmresultplayer) — NEW grind, validated
-99.255%, no upstream activity; fn_8017AA78 in the same unit is also open.
-Gate 1 exact; 10-hunk real delta. Both jobs first-try validated with the
-full fixed pipeline.
-
-### Rejected this round (asserts in body): mnsnap fn_802545C4 (13 asserts),
-gmstaffroll fn_801AB200 (2 asserts). mnstagesw mnStageSw_80236CBC remains
-assert-blocked from earlier.
+### mn_80233218 (mnruleplus) — NEW grind, validated
+99.891%, zero upstream activity ever. One assert in the body but gate 1
+passed exactly (the lone assert string does not shift the pool). 41-hunk
+real delta. Session best 539 within the first 200 iterations.
 
 ### gm_80182174 (gmregclear) — PARKED, 5-hunk residual
 After fixing the base (see TU pipeline notes below), the UNSTRIPPED cpp TU
