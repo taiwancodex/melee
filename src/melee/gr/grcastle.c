@@ -1,5 +1,7 @@
 #include "grcastle.h"
 
+#include <placeholder.h>
+
 #include "granime.h"
 #include "grdatfiles.h"
 #include "grdisplay.h"
@@ -9,17 +11,7 @@
 #include "grzakogenerator.h"
 #include "inlines.h"
 #include "types.h"
-
-#include <placeholder.h>
-
 #include <dolphin/mtx.h>
-#include <sysdolphin/baselib/archive.h>
-#include <sysdolphin/baselib/gobj.h>
-#include <sysdolphin/baselib/gobjgxlink.h>
-#include <sysdolphin/baselib/gobjproc.h>
-#include <sysdolphin/baselib/jobj.h>
-#include <sysdolphin/baselib/psstructs.h>
-#include <sysdolphin/baselib/random.h>
 #include <melee/cm/camera.h>
 #include <melee/ft/ftdevice.h>
 #include <melee/ft/ftlib.h>
@@ -32,6 +24,13 @@
 #include <melee/lb/lbvector.h>
 #include <melee/lb/types.h>
 #include <melee/mp/mplib.h>
+#include <sysdolphin/baselib/archive.h>
+#include <sysdolphin/baselib/gobj.h>
+#include <sysdolphin/baselib/gobjgxlink.h>
+#include <sysdolphin/baselib/gobjproc.h>
+#include <sysdolphin/baselib/jobj.h>
+#include <sysdolphin/baselib/psstructs.h>
+#include <sysdolphin/baselib/random.h>
 
 struct unkCastle {
     /* 0x000 */ u8 _pad[0x10C];

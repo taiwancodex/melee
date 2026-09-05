@@ -2,7 +2,6 @@
 
 #include "ftCo_HammerWait.h"
 #include "ftCo_Pass.h"
-
 #include <melee/ft/inlines.h>
 #include <melee/ft/types.h>
 

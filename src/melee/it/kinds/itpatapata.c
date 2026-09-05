@@ -1,13 +1,12 @@
 #include "itpatapata.h"
 
-#include "itnokonoko.h"
-
-#include <placeholder.h>
+#include <Runtime/platform.h>
 
 #include <melee/it/forward.h>
 
-#include <sysdolphin/baselib/jobj.h>
-#include <sysdolphin/baselib/random.h>
+#include <placeholder.h>
+
+#include "itnokonoko.h"
 #include <melee/cm/camera.h>
 #include <melee/ft/ftlib.h>
 #include <melee/it/inlines.h>
@@ -21,7 +20,8 @@
 #include <melee/it/itzako.h>
 #include <melee/lb/lb_00B0.h>
 #include <melee/mp/mpcoll.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/jobj.h>
+#include <sysdolphin/baselib/random.h>
 
 ItemStateTable it_803F88C0[] = {
     { 0, NULL, NULL, NULL },

@@ -1,11 +1,12 @@
 #include "ftdonkeyspeciallw.h"
 
-#include "ftdonkey.h"
-#include "types.h"
+#include <Runtime/platform.h>
 
-#include "forward.h"
 #include <melee/ft/forward.h>
 
+#include "forward.h"
+#include "ftdonkey.h"
+#include "types.h"
 #include <melee/ef/efasync.h>
 #include <melee/ef/efsync.h>
 #include <melee/ft/fighter.h>
@@ -17,7 +18,6 @@
 #include <melee/ft/inlines.h>
 #include <melee/ft/kinds/ftCommon/ftCo_Fall.h>
 #include <melee/ft/types.h>
-#include <Runtime/platform.h>
 
 void ftDk_SpecialLw_Enter(HSD_GObj* gobj)
 {

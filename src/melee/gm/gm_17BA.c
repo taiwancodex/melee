@@ -6,7 +6,6 @@
 #include "gmresult.h"
 #include "inlines.h"
 #include "types.h"
-
 #include <melee/lb/lblanguage.h>
 
 static const char* lbl_803D79D0[] = {

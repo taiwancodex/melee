@@ -1,8 +1,6 @@
 #include "it_3F14.h"
 
 #include "itdraw.h"
-
-#include "kinds/itarwinglaser.h"
 #include "kinds/itbat.h"
 #include "kinds/itbombhei.h"
 #include "kinds/itbox.h"
@@ -21,10 +19,8 @@
 #include "kinds/ithammerhead.h"
 #include "kinds/itharisen.h"
 #include "kinds/itheart.h"
-#include "kinds/itheiho.h"
 #include "kinds/itkinoko.h"
 #include "kinds/itkusudama.h"
-#include "kinds/itkyasarinegg.h"
 #include "kinds/itlgun.h"
 #include "kinds/itlgunbeam.h"
 #include "kinds/itlgunray.h"

@@ -6,7 +6,6 @@
 #include "gmvsmelee.h"
 #include "gmvsmode.h"
 #include "types.h"
-
 #include <melee/if/if_2FD9.h>
 
 GameModeState gm_Mode_LightningVs_States[] = {

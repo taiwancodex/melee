@@ -1,8 +1,8 @@
 #include "ftmasterhandthrow.h"
 
-#include "forward.h"
 #include <melee/ft/forward.h>
 
+#include "forward.h"
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_084E.h>
 #include <melee/ft/ftanim.h>

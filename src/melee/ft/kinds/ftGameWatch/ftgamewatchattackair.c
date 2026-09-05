@@ -1,10 +1,11 @@
 #include "ftgamewatchattackair.h"
 
-#include "ftgamewatch.h"
-#include "types.h"
+#include <Runtime/platform.h>
 
 #include <melee/ft/kinds/ftCommon/forward.h>
 
+#include "ftgamewatch.h"
+#include "types.h"
 #include <dolphin/mtx.h>
 #include <melee/ft/ft_081B.h>
 #include <melee/ft/inlines.h>
@@ -16,7 +17,6 @@
 #include <melee/it/kinds/itgamewatchparachute.h>
 #include <melee/it/kinds/itgamewatchturtle.h>
 #include <melee/lb/lb_00B0.h>
-#include <Runtime/platform.h>
 
 static void ftGw_AttackAirN_ExitItemHitlag(HSD_GObj*);
 

@@ -2,15 +2,13 @@
 /// @todo A lot of duplicate code here, can maybe be cleaned up with inlines.
 #include "itsword.h"
 
-#include "inlines.h"
-#include "types.h" // IWYU pragma: keep
+#include <Runtime/platform.h>
 
 #include <placeholder.h>
 
 #include "forward.h"
-
-#include <sysdolphin/baselib/gobj.h>
-#include <sysdolphin/baselib/jobj.h>
+#include "inlines.h"
+#include "types.h" // IWYU pragma: keep
 #include <melee/ft/ftlib.h>
 #include <melee/it/inlines.h>
 #include <melee/it/it_26B1.h>
@@ -20,7 +18,8 @@
 #include <melee/it/item.h>
 #include <melee/it/itgroundcoll.h>
 #include <melee/it/types.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/gobj.h>
+#include <sysdolphin/baselib/jobj.h>
 
 /* 284E30 */ static void it_80284E30(Item_GObj* gobj);
 /* 285084 */ static void it_80285084(Item_GObj* gobj);

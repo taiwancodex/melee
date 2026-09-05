@@ -1,19 +1,16 @@
 #include "grheal.h"
 
+#include <Runtime/platform.h>
+
+#include <placeholder.h>
+
+#include "forward.h"
 #include "granime.h"
 #include "ground.h"
 #include "grzakogenerator.h"
 #include "inlines.h"
 #include "stage.h"
-
-#include <placeholder.h>
-
-#include "forward.h"
-
 #include <dolphin/types.h>
-#include <sysdolphin/baselib/gobj.h>
-#include <sysdolphin/baselib/gobjproc.h>
-#include <sysdolphin/baselib/jobj.h>
 #include <melee/gm/gm_18A1.h>
 #include <melee/it/it_26B1.h>
 #include <melee/it/kinds/itcoin.h>
@@ -22,7 +19,9 @@
 #include <melee/lb/lb_00F9.h>
 #include <melee/mp/mplib.h>
 #include <melee/ty/toy.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/gobj.h>
+#include <sysdolphin/baselib/gobjproc.h>
+#include <sysdolphin/baselib/jobj.h>
 
 typedef struct grHeal_UnkData {
     s32 x0;

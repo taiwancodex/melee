@@ -1,6 +1,16 @@
 #include "ftcoll.h"
 
+#include <Runtime/platform.h>
+
+#include <melee/ef/forward.h>
+#include <melee/gr/forward.h>
+#include <melee/it/forward.h>
+
+#include <math.h>
+#include <placeholder.h>
+
 #include "fighter.h"
+#include "forward.h"
 #include "ft_081B.h"
 #include "ft_0877.h"
 #include "ft_0881.h"
@@ -11,25 +21,11 @@
 #include "ftdevice.h"
 #include "ftlib.h"
 #include "inlines.h"
-#include "types.h"
-
-#include <placeholder.h>
-
-#include "forward.h"
-
 #include "kinds/ftCommon/ftCo_Bury.h"
 #include "kinds/ftCommon/ftCo_Guard.h"
 #include "kinds/ftCommon/types.h"
-
-#include <melee/ef/forward.h>
-#include <melee/gr/forward.h>
-#include <melee/it/forward.h>
-
-#include <math.h>
+#include "types.h"
 #include <dolphin/mtx.h>
-#include <sysdolphin/baselib/debug.h>
-#include <sysdolphin/baselib/gobj.h>
-#include <sysdolphin/baselib/random.h>
 #include <melee/ef/efsync.h>
 #include <melee/gm/gm_unsplit.h>
 #include <melee/it/it_26B1.h>
@@ -45,7 +41,9 @@
 #include <melee/pl/plbonuslib.h>
 #include <melee/pl/plstale.h>
 #include <melee/pl/pltrick.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/debug.h>
+#include <sysdolphin/baselib/gobj.h>
+#include <sysdolphin/baselib/random.h>
 
 /// @todo .sdata2 order hack
 #ifdef MUST_MATCH

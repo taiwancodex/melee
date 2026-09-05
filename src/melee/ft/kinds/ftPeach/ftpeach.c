@@ -1,5 +1,12 @@
 #include "ftpeach.h"
 
+#include <Runtime/platform.h>
+
+#include <melee/ft/kinds/ftCommon/forward.h>
+#include <melee/it/forward.h>
+
+#include <placeholder.h>
+
 #include "ftpeachattacks4.h"
 #include "ftpeachfloat.h"
 #include "ftpeachfloatattack.h"
@@ -9,12 +16,6 @@
 #include "ftpeachspecialn.h"
 #include "ftpeachspecials.h"
 #include "types.h"
-
-#include <placeholder.h>
-
-#include <melee/ft/kinds/ftCommon/forward.h>
-#include <melee/it/forward.h>
-
 #include <melee/ft/ftcamera.h>
 #include <melee/ft/ftdata.h>
 #include <melee/ft/ftparts.h>
@@ -24,7 +25,6 @@
 #include <melee/ft/types.h>
 #include <melee/it/it_26B1.h>
 #include <melee/lb/lbanim.h>
-#include <Runtime/platform.h>
 
 /* 459DF0 */ UnkCostumeStruct ftPe_CostumeList[5];
 

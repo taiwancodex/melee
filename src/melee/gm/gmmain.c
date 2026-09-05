@@ -1,23 +1,17 @@
 
-#include "gm_unsplit.h"
-#include "gmmain_lib.h"
-#include "types.h"
+#include <Runtime/platform.h>
 
 #include <sysdolphin/baselib/forward.h>
 
+#include "gm_unsplit.h"
+#include "gmmain_lib.h"
+#include "types.h"
 #include <dolphin/card.h>
 #include <dolphin/dvd.h>
 #include <dolphin/gx.h>
 #include <dolphin/os.h>
 #include <dolphin/pad.h>
 #include <dolphin/vi.h>
-#include <sysdolphin/baselib/controller.h>
-#include <sysdolphin/baselib/debug.h>
-#include <sysdolphin/baselib/hsd_392C.h>
-#include <sysdolphin/baselib/hsd_3933.h>
-#include <sysdolphin/baselib/initialize.h>
-#include <sysdolphin/baselib/sislib.h>
-#include <sysdolphin/baselib/video.h>
 #include <melee/db/db.h>
 #include <melee/lb/lb_0195.h>
 #include <melee/lb/lbarq.h>
@@ -31,7 +25,13 @@
 #include <melee/lb/lbmthp.h>
 #include <melee/lb/lbsnap.h>
 #include <melee/lb/lbtime.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/controller.h>
+#include <sysdolphin/baselib/debug.h>
+#include <sysdolphin/baselib/hsd_392C.h>
+#include <sysdolphin/baselib/hsd_3933.h>
+#include <sysdolphin/baselib/initialize.h>
+#include <sysdolphin/baselib/sislib.h>
+#include <sysdolphin/baselib/video.h>
 
 extern PadLibData HSD_PadLibData;
 extern s32* seed_ptr;

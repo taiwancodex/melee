@@ -1,8 +1,10 @@
-#include "ftnana.h"
+#include <Runtime/platform.h>
 
 #include <melee/ft/forward.h>
 
 #include <math.h>
+
+#include "ftnana.h"
 #include <dolphin/mtx.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
@@ -17,7 +19,6 @@
 #include <melee/ft/kinds/ftPopo/types.h>
 #include <melee/ft/types.h>
 #include <melee/pl/player.h>
-#include <Runtime/platform.h>
 
 /* 123B3C */ static void ftNn_Init_80123B3C(Fighter_GObj* nana_gobj);
 /* 123BF0 */ static void ftNn_Init_80123BF0(Fighter_GObj* gobj);

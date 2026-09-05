@@ -1,27 +1,14 @@
 #include "ifstock.h"
 
-#include "ifall.h"
-#include "ifstatus.h"
-
-#include "ifstock.static.h"
-
-#include "types.h"
-
-#include <placeholder.h>
-
 #include <melee/gm/forward.h>
 #include <melee/sc/forward.h>
 
-#include <sysdolphin/baselib/aobj.h>
-#include <sysdolphin/baselib/dobj.h>
-#include <sysdolphin/baselib/gobj.h>
-#include <sysdolphin/baselib/gobjgxlink.h>
-#include <sysdolphin/baselib/gobjobject.h>
-#include <sysdolphin/baselib/gobjplink.h>
-#include <sysdolphin/baselib/gobjproc.h>
-#include <sysdolphin/baselib/jobj.h>
-#include <sysdolphin/baselib/mobj.h>
-#include <sysdolphin/baselib/tobj.h>
+#include <placeholder.h>
+
+#include "ifall.h"
+#include "ifstatus.h"
+#include "ifstock.static.h"
+#include "types.h"
 #include <melee/ef/efsync.h>
 #include <melee/gm/gm_unsplit.h>
 #include <melee/gm/gmregclear.h>
@@ -33,6 +20,16 @@
 #include <melee/lb/lbvector.h>
 #include <melee/pl/player.h>
 #include <melee/sc/types.h>
+#include <sysdolphin/baselib/aobj.h>
+#include <sysdolphin/baselib/dobj.h>
+#include <sysdolphin/baselib/gobj.h>
+#include <sysdolphin/baselib/gobjgxlink.h>
+#include <sysdolphin/baselib/gobjobject.h>
+#include <sysdolphin/baselib/gobjplink.h>
+#include <sysdolphin/baselib/gobjproc.h>
+#include <sysdolphin/baselib/jobj.h>
+#include <sysdolphin/baselib/mobj.h>
+#include <sysdolphin/baselib/tobj.h>
 
 struct IfStockStealAnim {
     Vec3 start;

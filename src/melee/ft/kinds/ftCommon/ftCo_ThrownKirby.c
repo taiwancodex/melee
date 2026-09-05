@@ -1,15 +1,14 @@
 #include "ftCo_ThrownKirby.h"
 
-#include "ftCo_Fall.h"
-#include "types.h"
+#include <Runtime/platform.h>
+
+#include <melee/ft/forward.h>
 
 #include <placeholder.h>
 
 #include "forward.h"
-#include <melee/ft/forward.h>
-
-#include <sysdolphin/baselib/gobj.h>
-#include <sysdolphin/baselib/jobj.h>
+#include "ftCo_Fall.h"
+#include "types.h"
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
 #include <melee/ft/ftanim.h>
@@ -22,7 +21,8 @@
 #include <melee/ft/types.h>
 #include <melee/lb/lb_00B0.h>
 #include <melee/lb/lbvector.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/gobj.h>
+#include <sysdolphin/baselib/jobj.h>
 
 #ifdef MUST_MATCH
 static void sdata2_order(void)

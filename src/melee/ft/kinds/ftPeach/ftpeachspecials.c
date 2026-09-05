@@ -1,9 +1,10 @@
 #include "ftpeachspecials.h"
 
-#include "types.h"
+#include <Runtime/platform.h>
 
 #include <melee/ft/forward.h>
 
+#include "types.h"
 #include <dolphin/mtx.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
@@ -16,7 +17,6 @@
 #include <melee/ft/types.h>
 #include <melee/it/kinds/itpeachexplode.h>
 #include <melee/lb/lb_00B0.h>
-#include <Runtime/platform.h>
 
 /* 11C2F4 */ static void reset(HSD_GObj* gobj);
 /* 11C430 */ static void doAirEnd0(HSD_GObj* gobj);

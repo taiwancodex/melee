@@ -1,11 +1,11 @@
 #include "debugconsole_main.h"
 
+#include <string.h>
+
 #include "hsd_3915.h"
 #include "hsd_393C.h"
 #include "hsd_397E.h"
 #include "video.h"
-
-#include <string.h>
 #include <dolphin/os.h>
 #include <dolphin/pad.h>
 #include <dolphin/vi.h>

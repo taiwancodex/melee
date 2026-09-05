@@ -4,7 +4,6 @@
 #include "ftCo_Fall.h"
 #include "ftCo_ItemThrow.h"
 #include "ftpickupitem.h"
-
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
 #include <melee/ft/ft_084E.h>

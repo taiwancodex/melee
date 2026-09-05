@@ -1,10 +1,9 @@
 #include "ftsamusspecials.h"
 
-#include "ftsamusspecialn.h"
-#include "types.h"
-
 #include <melee/ft/forward.h>
 
+#include "ftsamusspecialn.h"
+#include "types.h"
 #include <dolphin/mtx.h>
 #include <melee/ef/eflib.h>
 #include <melee/ft/fighter.h>

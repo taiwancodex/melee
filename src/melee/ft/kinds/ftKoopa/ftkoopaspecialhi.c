@@ -1,10 +1,9 @@
 #include "ftkoopaspecialhi.h"
 
-#include "ftkoopa.h"
-#include "ftkoopaspecialn.h"
-
 #include <melee/ft/forward.h>
 
+#include "ftkoopa.h"
+#include "ftkoopaspecialn.h"
 #include <melee/ef/eflib.h>
 #include <melee/ef/efsync.h>
 #include <melee/ft/fighter.h>

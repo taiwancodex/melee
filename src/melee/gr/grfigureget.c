@@ -1,19 +1,18 @@
 #include "grfigureget.h"
 
+#include <Runtime/platform.h>
+
+#include <melee/it/forward.h>
+#include <melee/lb/forward.h>
+#include <sysdolphin/baselib/forward.h>
+
 #include "granime.h"
 #include "ground.h"
 #include "grzakogenerator.h"
 #include "inlines.h"
 #include "stage.h"
 #include "types.h"
-
-#include <melee/it/forward.h>
-#include <melee/lb/forward.h>
-#include <sysdolphin/baselib/forward.h>
-
 #include <dolphin/mtx.h>
-#include <sysdolphin/baselib/gobj.h>
-#include <sysdolphin/baselib/gobjproc.h>
 #include <melee/ft/ftlib.h>
 #include <melee/gm/gmregclear.h>
 #include <melee/it/inlines.h>
@@ -25,7 +24,8 @@
 #include <melee/mp/mplib.h>
 #include <melee/ty/toy.h>
 #include <melee/ty/tydisplay.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/gobj.h>
+#include <sysdolphin/baselib/gobjproc.h>
 
 typedef struct grFigureGet_Data {
     s32 x0;

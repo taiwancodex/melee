@@ -1,5 +1,9 @@
 #include "ftCo_AppealS.h"
 
+#include <Runtime/platform.h>
+
+#include <melee/ft/forward.h>
+
 #include "ftCo_Attack1.h"
 #include "ftCo_Attack100.h"
 #include "ftCo_AttackHi3.h"
@@ -11,9 +15,6 @@
 #include "ftCo_Escape.h"
 #include "ftCo_Guard.h"
 #include "ftCo_SpecialS.h"
-
-#include <melee/ft/forward.h>
-
 #include <melee/db/db.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
@@ -30,7 +31,6 @@
 #include <melee/lb/lb_00B0.h>
 #include <melee/lb/lb_00F9.h>
 #include <melee/pl/plbonuslib.h>
-#include <Runtime/platform.h>
 
 bool ftCo_800DE9B8(Fighter_GObj* gobj)
 {

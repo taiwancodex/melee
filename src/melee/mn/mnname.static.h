@@ -1,10 +1,9 @@
 #ifndef MELEE_MN_STATIC_NAME_H
 #define MELEE_MN_STATIC_NAME_H
 
-#include "mnname.h" // IWYU pragma: export
-
 #include <melee/mn/forward.h>
 
+#include "mnname.h" // IWYU pragma: export
 #include <dolphin/mtx.h>
 #include <melee/mn/types.h>
 

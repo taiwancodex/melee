@@ -1,19 +1,19 @@
 #include "grfigure1.h"
 
+#include <Runtime/platform.h>
+
+#include <melee/lb/forward.h>
+
 #include "granime.h"
 #include "ground.h"
 #include "grzakogenerator.h"
 #include "inlines.h"
 #include "types.h"
-
-#include <melee/lb/forward.h>
-
 #include <dolphin/mtx.h>
+#include <melee/lb/lb_00F9.h>
 #include <sysdolphin/baselib/gobj.h>
 #include <sysdolphin/baselib/gobjproc.h>
 #include <sysdolphin/baselib/jobj.h>
-#include <melee/lb/lb_00F9.h>
-#include <Runtime/platform.h>
 
 /* 20DFDC */ static void grFigure1_OnDemoInit(int);
 /* 20DFE0 */ static void grFigure1_OnInit(void);

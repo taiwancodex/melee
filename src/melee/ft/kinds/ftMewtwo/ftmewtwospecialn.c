@@ -1,13 +1,13 @@
 #include "ftmewtwospecialn.h"
 
-#include "ftmewtwo.h"
-#include "types.h"
-
-#include "forward.h"
 #include <melee/ft/forward.h>
 #include <melee/it/forward.h>
 
 #include <math.h>
+
+#include "forward.h"
+#include "ftmewtwo.h"
+#include "types.h"
 #include <dolphin/mtx.h>
 #include <melee/ef/eflib.h>
 #include <melee/ef/efsync.h>

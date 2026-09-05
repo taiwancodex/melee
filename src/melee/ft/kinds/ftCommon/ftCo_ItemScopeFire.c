@@ -1,6 +1,5 @@
 #include "ftCo_Attack100.h"
 #include "ftCo_ItemScopeStart.h"
-
 #include <melee/ef/efsync.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>

@@ -1,15 +1,15 @@
 #include "ftCo_AirCatch.h"
 
-#include "ftCo_FallSpecial.h"
-#include "ftCo_Landing.h"
-#include "types.h"
-
-#include <placeholder.h>
+#include <Runtime/platform.h>
 
 #include <melee/ft/kinds/ftSamus/forward.h>
 #include <melee/it/forward.h>
 
-#include <sysdolphin/baselib/jobj.h>
+#include <placeholder.h>
+
+#include "ftCo_FallSpecial.h"
+#include "ftCo_Landing.h"
+#include "types.h"
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
 #include <melee/ft/ft_0877.h>
@@ -24,7 +24,7 @@
 #include <melee/lb/lb_00B0.h>
 #include <melee/mp/mpcoll.h>
 #include <melee/mp/mplib.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/jobj.h>
 
 bool ftCo_800C3A14(Fighter_GObj* gobj)
 {

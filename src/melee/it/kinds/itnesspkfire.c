@@ -1,13 +1,12 @@
 #include "itnesspkfire.h"
 
-#include "itnesspkfirepillar.h"
-
-#include <placeholder.h>
+#include <Runtime/platform.h>
 
 #include <melee/it/forward.h>
 
-#include <sysdolphin/baselib/gobj.h>
-#include <sysdolphin/baselib/jobj.h>
+#include <placeholder.h>
+
+#include "itnesspkfirepillar.h"
 #include <melee/db/db.h>
 #include <melee/it/inlines.h>
 #include <melee/it/it_26B1.h>
@@ -15,7 +14,8 @@
 #include <melee/it/item.h>
 #include <melee/it/itgroundcoll.h>
 #include <melee/it/types.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/gobj.h>
+#include <sysdolphin/baselib/jobj.h>
 
 ItemStateTable it_803F6B28[] = {
     { 0, itNesspkfire_UnkMotion0_Anim, NULL, itNesspkfire_UnkMotion0_Coll },

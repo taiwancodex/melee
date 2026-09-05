@@ -1,5 +1,14 @@
 #include "ftCo_Bury.h"
 
+#include <Runtime/platform.h>
+
+#include <melee/ft/forward.h>
+#include <melee/gr/forward.h>
+#include <melee/lb/forward.h>
+
+#include <placeholder.h>
+
+#include "forward.h"
 #include "ftCo_AirCatch.h"
 #include "ftCo_Attack100.h"
 #include "ftCo_AttackAir.h"
@@ -15,17 +24,7 @@
 #include "ftCo_SpecialAir.h"
 #include "ftCo_Throw.h"
 #include "types.h"
-
-#include <placeholder.h>
-
-#include "forward.h"
-#include <melee/ft/forward.h>
-#include <melee/gr/forward.h>
-#include <melee/lb/forward.h>
-
 #include <dolphin/mtx.h>
-#include <sysdolphin/baselib/gobj.h>
-#include <sysdolphin/baselib/jobj.h>
 #include <melee/ef/efsync.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
@@ -41,7 +40,8 @@
 #include <melee/mp/mplib.h>
 #include <melee/pl/player.h>
 #include <melee/pl/plbonuslib.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/gobj.h>
+#include <sysdolphin/baselib/jobj.h>
 
 /// @todo .sdata2 order hack
 #ifdef MUST_MATCH

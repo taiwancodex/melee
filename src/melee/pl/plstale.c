@@ -2,7 +2,6 @@
 
 #include "player.h"
 #include "types.h"
-
 #include <melee/ft/ftlib.h>
 #include <melee/ft/inlines.h>
 #include <melee/ft/types.h>

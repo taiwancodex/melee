@@ -1,6 +1,13 @@
 #include "ftcommon.h"
 
+#include <melee/it/forward.h>
+#include <melee/mp/forward.h>
+
+#include <math.h>
+#include <stdbool.h>
+
 #include "fighter.h"
+#include "forward.h"
 #include "ft_081B.h"
 #include "ft_0877.h"
 #include "ft_0881.h"
@@ -14,25 +21,12 @@
 #include "ftlib.h"
 #include "ftmetal.h"
 #include "ftparts.h"
-#include "types.h"
-
-#include "forward.h"
-
 #include "kinds/ftCommon/ftCo_Damage.h"
 #include "kinds/ftCommon/ftCo_DamageFall.h"
 #include "kinds/ftCommon/ftCo_Fall.h"
 #include "kinds/ftCommon/ftCo_HammerWait.h"
 #include "kinds/ftCommon/ftpickupitem.h"
-
-#include <melee/it/forward.h>
-#include <melee/mp/forward.h>
-
-#include <math.h>
-#include <stdbool.h>
-#include <sysdolphin/baselib/debug.h>
-#include <sysdolphin/baselib/gobj.h>
-#include <sysdolphin/baselib/jobj.h>
-#include <sysdolphin/baselib/rumble.h>
+#include "types.h"
 #include <melee/ef/eflib.h>
 #include <melee/gm/gm_unsplit.h>
 #include <melee/it/it_26B1.h>
@@ -47,6 +41,10 @@
 #include <melee/pl/player.h>
 #include <melee/pl/plbonuslib.h>
 #include <melee/sfx/crowdsfx.h>
+#include <sysdolphin/baselib/debug.h>
+#include <sysdolphin/baselib/gobj.h>
+#include <sysdolphin/baselib/jobj.h>
+#include <sysdolphin/baselib/rumble.h>
 
 const Vec3 ftCo_803B74A0 = { 0 };
 

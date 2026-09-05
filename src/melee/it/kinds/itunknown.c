@@ -1,9 +1,8 @@
 #include "itunknown.h"
 
-#include "inlines.h"
-
 #include <math.h>
-#include <sysdolphin/baselib/random.h>
+
+#include "inlines.h"
 #include <melee/cm/camera.h>
 #include <melee/gr/stage.h>
 #include <melee/it/inlines.h>
@@ -12,6 +11,7 @@
 #include <melee/it/it_279C.h>
 #include <melee/it/item.h>
 #include <melee/lb/lbvector.h>
+#include <sysdolphin/baselib/random.h>
 
 ItemStateTable it_803F7D60[] = {
     { 0, itUnknown_UnkMotion0_Anim, itUnknown_UnkMotion0_Phys,

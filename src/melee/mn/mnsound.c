@@ -3,7 +3,11 @@
 #include "inlines.h"
 #include "mnmain.h"
 #include "types.h"
-
+#include <melee/gm/gm_1601.h>
+#include <melee/gm/gmmain_lib.h>
+#include <melee/lb/lbarchive.h>
+#include <melee/lb/lbcardgame.h>
+#include <melee/sc/types.h>
 #include <sysdolphin/baselib/debug.h>
 #include <sysdolphin/baselib/gobj.h>
 #include <sysdolphin/baselib/gobjgxlink.h>
@@ -14,11 +18,6 @@
 #include <sysdolphin/baselib/jobj.h>
 #include <sysdolphin/baselib/memory.h>
 #include <sysdolphin/baselib/sislib.h>
-#include <melee/gm/gm_1601.h>
-#include <melee/gm/gmmain_lib.h>
-#include <melee/lb/lbarchive.h>
-#include <melee/lb/lbcardgame.h>
-#include <melee/sc/types.h>
 
 /* 3EEED8 */ static AnimLoopSettings mnSound_803EEED8[] = {
     { 0.0F, 199.0F, 0.0F },

@@ -1,14 +1,14 @@
 #include "itkoopaflame.h"
 
-#include "inlines.h"
-
-#include <placeholder.h>
+#include <Runtime/platform.h>
 
 #include <melee/it/forward.h>
 #include <melee/lb/forward.h>
 
 #include <math.h>
-#include <sysdolphin/baselib/random.h>
+#include <placeholder.h>
+
+#include "inlines.h"
 #include <melee/db/db.h>
 #include <melee/ef/eflib.h>
 #include <melee/ef/efsync.h>
@@ -20,7 +20,7 @@
 #include <melee/it/item.h>
 #include <melee/it/itgroundcoll.h>
 #include <melee/lb/lbvector.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/random.h>
 
 #define itkpf_Floor 1
 #define itkpf_Ceiling 2

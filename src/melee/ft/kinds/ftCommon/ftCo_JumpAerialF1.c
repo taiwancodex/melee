@@ -3,7 +3,6 @@
 #include "ftCo_FallAerial.h"
 #include "ftCo_ItemScrew.h"
 #include "ftCo_JumpAerial.h"
-
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
 #include <melee/ft/ft_084E.h>

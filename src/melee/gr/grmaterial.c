@@ -1,11 +1,17 @@
 #include "grmaterial.h"
 
-#include "types.h"
-
 #include <melee/lb/forward.h>
 #include <sysdolphin/baselib/forward.h>
 
+#include "types.h"
 #include <dolphin/os.h>
+#include <melee/it/it_2725.h>
+#include <melee/it/item.h>
+#include <melee/it/ithitbox.h>
+#include <melee/it/kinds/ityaku.h>
+#include <melee/it/types.h>
+#include <melee/lb/lb_00B0.h>
+#include <melee/lb/lb_013B.h>
 #include <sysdolphin/baselib/debug.h>
 #include <sysdolphin/baselib/dobj.h>
 #include <sysdolphin/baselib/gobj.h>
@@ -16,13 +22,6 @@
 #include <sysdolphin/baselib/tev.h>
 #include <sysdolphin/baselib/texp.h>
 #include <sysdolphin/baselib/tobj.h>
-#include <melee/it/it_2725.h>
-#include <melee/it/item.h>
-#include <melee/it/ithitbox.h>
-#include <melee/it/kinds/ityaku.h>
-#include <melee/it/types.h>
-#include <melee/lb/lb_00B0.h>
-#include <melee/lb/lb_013B.h>
 
 /* 1C897C */ static void grMaterial_801C897C(HSD_JObj* jobj, u32 flags);
 /* 1C8E74 */ static void grMaterial_801C8E74(void);

@@ -1,10 +1,11 @@
 #include "itnesspkflashexplode.h"
 
-#include <placeholder.h>
+#include <Runtime/platform.h>
 
 #include <melee/it/forward.h>
 
-#include <sysdolphin/baselib/jobj.h>
+#include <placeholder.h>
+
 #include <melee/cm/camera.h>
 #include <melee/db/db.h>
 #include <melee/it/inlines.h>
@@ -12,7 +13,7 @@
 #include <melee/it/it_2725.h>
 #include <melee/it/itcoll.h>
 #include <melee/it/item.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/jobj.h>
 
 /* 2AFD44 */ static bool itNessPKFlashExplode_UnkMotion0_Coll(Item_GObj* gobj);
 

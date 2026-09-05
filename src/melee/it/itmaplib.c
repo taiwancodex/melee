@@ -6,7 +6,6 @@
 #include "it_3F14.h"
 #include "iteffect.h"
 #include "ithitbox.h"
-
 #include <melee/lb/lbvector.h>
 #include <melee/mp/mpcoll.h>
 #include <melee/mp/mplib.h>

@@ -1,14 +1,12 @@
+#include <melee/ft/forward.h>
+
+#include <placeholder.h>
+#include <stddef.h>
+
+#include "forward.h"
 #include "ftkirbyspecialdonkey.h"
 #include "inlines.h"
 #include "types.h"
-
-#include <placeholder.h>
-
-#include "forward.h"
-#include <melee/ft/forward.h>
-
-#include <stddef.h>
-#include <sysdolphin/baselib/random.h>
 #include <melee/ef/efsync.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
@@ -25,6 +23,7 @@
 #include <melee/ft/types.h>
 #include <melee/it/kinds/itseakneedleheld.h>
 #include <melee/it/kinds/itseakneedlethrown.h>
+#include <sysdolphin/baselib/random.h>
 
 /* 106DB0 */ static void fn_80106DB0(Fighter_GObj*);
 /* 3CB770 */ static float ftKb_Init_803CB770[] = {

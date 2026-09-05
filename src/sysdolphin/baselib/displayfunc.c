@@ -1,5 +1,7 @@
 #include "displayfunc.h"
 
+#include <string.h>
+
 #include "cobj.h"
 #include "dobj.h"
 #include "lobj.h"
@@ -10,8 +12,6 @@
 #include "state.h"
 #include "tev.h"
 #include "util.h"
-
-#include <string.h>
 #include <dolphin/gx.h>
 #include <dolphin/mtx.h>
 

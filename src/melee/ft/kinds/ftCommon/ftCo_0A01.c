@@ -1,10 +1,7 @@
 #include "ftCo_0A01.h"
 
-#include "ftpickupitem.h"
+#include <Runtime/platform.h>
 
-#include <placeholder.h>
-
-#include "forward.h"
 #include <melee/ft/kinds/ftDonkey/forward.h>
 #include <melee/ft/kinds/ftKirby/forward.h>
 #include <melee/ft/kinds/ftKoopa/forward.h>
@@ -14,8 +11,11 @@
 #include <melee/gr/forward.h>
 
 #include <math.h>
+#include <placeholder.h>
+
+#include "forward.h"
+#include "ftpickupitem.h"
 #include <dolphin/mtx.h>
-#include <sysdolphin/baselib/random.h>
 #include <melee/cm/camera.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_0877.h>
@@ -47,7 +47,7 @@
 #include <melee/mp/mplib.h>
 #include <melee/mp/types.h>
 #include <melee/pl/player.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/random.h>
 
 /* 09D044 */ static void ftCo_800A0148(Fighter*);
 /* 09D06C */ static void ftCo_800AC7D4(Fighter*);

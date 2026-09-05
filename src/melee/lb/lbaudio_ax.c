@@ -1,25 +1,17 @@
 #include "lbaudio_ax.h"
 
-#include "lb_0195.h"
-#include "lbarchive.h"
-
-#include "lbaudio_ax.static.h"
-
-#include "lblanguage.h"
-
 #include <stdbool.h>
 #include <stddef.h>
 #include <string.h>
+
+#include "lb_0195.h"
+#include "lbarchive.h"
+#include "lbaudio_ax.static.h"
+#include "lblanguage.h"
 #include <dolphin/ai.h>
 #include <dolphin/ar.h>
 #include <dolphin/ax.h>
 #include <dolphin/axfx.h>
-#include <sysdolphin/baselib/axdriver.h>
-#include <sysdolphin/baselib/gobjplink.h>
-#include <sysdolphin/baselib/gobjproc.h>
-#include <sysdolphin/baselib/gobjuserdata.h>
-#include <sysdolphin/baselib/random.h>
-#include <sysdolphin/baselib/synth.h>
 #include <melee/cm/camera.h>
 #include <melee/ft/ftlib.h>
 #include <melee/gm/gm_1601.h>
@@ -28,6 +20,12 @@
 #include <melee/gr/stage.h>
 #include <melee/it/it_26B1.h>
 #include <melee/pl/player.h>
+#include <sysdolphin/baselib/axdriver.h>
+#include <sysdolphin/baselib/gobjplink.h>
+#include <sysdolphin/baselib/gobjproc.h>
+#include <sysdolphin/baselib/gobjuserdata.h>
+#include <sysdolphin/baselib/random.h>
+#include <sysdolphin/baselib/synth.h>
 
 #define GET_SOUND(x) ((lbAudioAx_UserData*) HSD_GObjGetUserData(x))
 

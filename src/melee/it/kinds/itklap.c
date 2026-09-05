@@ -1,7 +1,7 @@
 #include "itklap.h"
 
 #include <math.h>
-#include <sysdolphin/baselib/random.h>
+
 #include <melee/gr/grkongo.h>
 #include <melee/gr/ground.h>
 #include <melee/it/inlines.h>
@@ -13,6 +13,7 @@
 #include <melee/it/itzako.h>
 #include <melee/lb/lb_00B0.h>
 #include <melee/lb/lbcollision.h>
+#include <sysdolphin/baselib/random.h>
 
 ItemStateTable it_803F8940[] = {
     {

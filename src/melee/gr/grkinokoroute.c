@@ -1,5 +1,9 @@
 #include "grkinokoroute.h"
 
+#include <Runtime/platform.h>
+
+#include <math.h>
+
 #include "grdisplay.h"
 #include "grlib.h"
 #include "grmaterial.h"
@@ -7,15 +11,6 @@
 #include "grzakogenerator.h"
 #include "inlines.h"
 #include "stage.h"
-
-#include <math.h>
-#include <sysdolphin/baselib/debug.h>
-#include <sysdolphin/baselib/gobj.h>
-#include <sysdolphin/baselib/gobjgxlink.h>
-#include <sysdolphin/baselib/gobjproc.h>
-#include <sysdolphin/baselib/jobj.h>
-#include <sysdolphin/baselib/psstructs.h>
-#include <sysdolphin/baselib/random.h>
 #include <melee/cm/camera.h>
 #include <melee/ef/efsync.h>
 #include <melee/ft/ftdevice.h>
@@ -26,7 +21,13 @@
 #include <melee/lb/lb_00F9.h>
 #include <melee/lb/lbvector.h>
 #include <melee/mp/mplib.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/debug.h>
+#include <sysdolphin/baselib/gobj.h>
+#include <sysdolphin/baselib/gobjgxlink.h>
+#include <sysdolphin/baselib/gobjproc.h>
+#include <sysdolphin/baselib/jobj.h>
+#include <sysdolphin/baselib/psstructs.h>
+#include <sysdolphin/baselib/random.h>
 
 static struct {
     int x0;

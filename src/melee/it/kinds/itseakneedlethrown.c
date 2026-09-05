@@ -1,12 +1,10 @@
 #include "itseakneedlethrown.h"
 
-#include <placeholder.h>
-
 #include <melee/it/forward.h>
 
 #include <math.h>
-#include <sysdolphin/baselib/jobj.h>
-#include <sysdolphin/baselib/random.h>
+#include <placeholder.h>
+
 #include <melee/db/db.h>
 #include <melee/ft/ftlib.h>
 #include <melee/it/inlines.h>
@@ -18,6 +16,8 @@
 #include <melee/lb/lbvector.h>
 #include <melee/mp/mpcoll.h>
 #include <melee/mp/mplib.h>
+#include <sysdolphin/baselib/jobj.h>
+#include <sysdolphin/baselib/random.h>
 
 ItemStateTable it_803F6F50[] = {
     { 0, itSeakneedlethrown_UnkMotion0_Anim,

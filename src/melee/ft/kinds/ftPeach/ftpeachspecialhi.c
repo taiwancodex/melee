@@ -1,7 +1,6 @@
 #include "ftpeachspecialhi.h"
 
-#include "ftpeach.h"
-#include "types.h"
+#include <Runtime/platform.h>
 
 #include <melee/ft/forward.h>
 #include <melee/ft/kinds/ftCommon/forward.h>
@@ -9,6 +8,9 @@
 #include <sysdolphin/baselib/forward.h>
 
 #include <math.h>
+
+#include "ftpeach.h"
+#include "types.h"
 #include <dolphin/mtx.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
@@ -24,7 +26,6 @@
 #include <melee/it/it_26B1.h>
 #include <melee/it/kinds/itpeachparasol.h>
 #include <melee/lb/lb_00B0.h>
-#include <Runtime/platform.h>
 
 /* 11D424 */ static void ftPe_SpecialHi_8011D424(HSD_GObj* gobj);
 /* 11D598 */ static void ftPe_SpecialHi_8011DD8C(HSD_GObj* gobj);

@@ -1,6 +1,8 @@
 #ifndef _jobj_h_
 #define _jobj_h_
 
+#include <Runtime/platform.h>
+
 #include <sysdolphin/baselib/forward.h>
 
 #include <dolphin/mtx.h>
@@ -10,7 +12,6 @@
 #include <sysdolphin/baselib/object.h>
 #include <sysdolphin/baselib/pobj.h>
 #include <sysdolphin/baselib/spline.h>
-#include <Runtime/platform.h>
 
 #define JOBJ_PTCL_ACTIVE 0x7FFFFFFF
 #define JOBJ_PTCL_OFFSET_MASK 0xFFFFFF

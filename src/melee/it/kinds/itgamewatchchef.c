@@ -1,10 +1,8 @@
 #include "itgamewatchchef.h"
 
-#include "inlines.h"
-
 #include <placeholder.h>
 
-#include <sysdolphin/baselib/jobj.h>
+#include "inlines.h"
 #include <melee/db/db.h>
 #include <melee/it/inlines.h>
 #include <melee/it/it_26B1.h>
@@ -12,6 +10,7 @@
 #include <melee/it/item.h>
 #include <melee/it/itgroundcoll.h>
 #include <melee/it/itzako.h>
+#include <sysdolphin/baselib/jobj.h>
 
 ItemStateTable it_803F79E0[] = {
     { 0, itGamewatchchef_UnkMotion0_Anim, itGamewatchchef_UnkMotion0_Phys,

@@ -1,5 +1,7 @@
 #include "ftCo_Attack1.h"
 
+#include <Runtime/platform.h>
+
 #include "ftCo_Attack100.h"
 #include "ftCo_AttackHi3.h"
 #include "ftCo_AttackHi4.h"
@@ -16,7 +18,6 @@
 #include "ftCo_Walk.h"
 #include "ftpickupitem.h"
 #include "types.h"
-
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
 #include <melee/ft/ft_084E.h>
@@ -28,7 +29,6 @@
 #include <melee/ft/kinds/ftGameWatch/ftgamewatchattack11.h>
 #include <melee/ft/types.h>
 #include <melee/it/it_26B1.h>
-#include <Runtime/platform.h>
 
 /* 08AB50 */ static void onPkPc21EC(Fighter_GObj* gobj);
 /* 08AB84 */ static void decideAttack11(Fighter_GObj* gobj);

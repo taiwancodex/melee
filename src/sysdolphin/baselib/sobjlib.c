@@ -1,6 +1,8 @@
 #define SOBJLIB_INTERNAL
 #include "sobjlib.h"
 
+#include <math.h>
+
 #include "cobj.h"
 #include "gobj.h"
 #include "gobjgxlink.h"
@@ -10,8 +12,6 @@
 #include "state.h"
 #include "tev.h"
 #include "tobj.h"
-
-#include <math.h>
 #include <dolphin/gx.h>
 #include <dolphin/os.h>
 

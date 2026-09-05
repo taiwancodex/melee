@@ -1,9 +1,11 @@
 #include "itsamusbomb.h"
 
+#include <Runtime/platform.h>
+
 #include <melee/it/forward.h>
 
 #include <math.h>
-#include <sysdolphin/baselib/mtx.h>
+
 #include <melee/db/db.h>
 #include <melee/ft/kinds/ftSamus/ftsamus.h>
 #include <melee/it/inlines.h>
@@ -13,7 +15,7 @@
 #include <melee/it/itgroundcoll.h>
 #include <melee/lb/lb_00B0.h>
 #include <melee/lb/lbvector.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/mtx.h>
 
 ItemStateTable it_803F7220[] = {
     { 0, itSamusbomb_UnkMotion0_Anim, itSamusbomb_UnkMotion0_Phys,

@@ -1,8 +1,10 @@
 #include "ftCo_KinokoGiantEnd.h"
 
-#include "forward.h"
+#include <Runtime/platform.h>
+
 #include <melee/ft/forward.h>
 
+#include "forward.h"
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
 #include <melee/ft/ft_0892.h>
@@ -10,7 +12,6 @@
 #include <melee/ft/ftcommon.h>
 #include <melee/ft/inlines.h>
 #include <melee/ft/types.h>
-#include <Runtime/platform.h>
 
 /* 0D1C40 */ static void fn_800D1C40(Fighter_GObj* gobj);
 

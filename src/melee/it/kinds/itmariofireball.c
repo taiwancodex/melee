@@ -1,9 +1,8 @@
 #include "itmariofireball.h"
 
 #include <math.h>
+
 #include <dolphin/mtx.h>
-#include <sysdolphin/baselib/gobj.h>
-#include <sysdolphin/baselib/mtx.h>
 #include <melee/db/db.h>
 #include <melee/ef/efasync.h>
 #include <melee/it/inlines.h>
@@ -13,6 +12,8 @@
 #include <melee/it/item.h>
 #include <melee/it/itgroundcoll.h>
 #include <melee/it/itmaplib.h>
+#include <sysdolphin/baselib/gobj.h>
+#include <sysdolphin/baselib/mtx.h>
 
 ItemStateTable it_803F6788[] = {
     { 0, itMariofireball_UnkMotion0_Anim, itMariofireball_UnkMotion0_Phys,

@@ -1,8 +1,8 @@
 #include "controller.h"
 
-#include "rumble.h"
-
 #include <math.h>
+
+#include "rumble.h"
 #include <dolphin/os.h>
 #include <dolphin/pad.h>
 

@@ -1,11 +1,12 @@
 #include "ftmasterhandbackdisappear.h"
 
+#include <Runtime/platform.h>
+
 #include "ftmasterhandtagcancel.h"
 #include "ftmasterhandthrownmasterhand.h"
 #include "ftmasterhandwait11.h"
 #include "ftmasterhandwait12.h"
 #include "types.h"
-
 #include <dolphin/mtx.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_084E.h>
@@ -15,7 +16,6 @@
 #include <melee/ft/types.h>
 #include <melee/lb/lbvector.h>
 #include <melee/pl/player.h>
-#include <Runtime/platform.h>
 
 void ftMh_BackDisappear_Anim(HSD_GObj* gobj)
 {

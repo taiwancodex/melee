@@ -1,5 +1,7 @@
 #include "grgarden.h"
 
+#include <Runtime/platform.h>
+
 #include "granime.h"
 #include "grlib.h"
 #include "grmaterial.h"
@@ -8,20 +10,18 @@
 #include "inlines.h"
 #include "stage.h"
 #include "types.h"
-
-#include <sysdolphin/baselib/gobj.h>
-#include <sysdolphin/baselib/gobjobject.h>
-#include <sysdolphin/baselib/gobjproc.h>
-#include <sysdolphin/baselib/jobj.h>
-#include <sysdolphin/baselib/psstructs.h>
-#include <sysdolphin/baselib/random.h>
 #include <melee/ft/ftdevice.h>
 #include <melee/ft/ftlib.h>
 #include <melee/gm/gm_16AE.h>
 #include <melee/it/item.h>
 #include <melee/lb/lb_00B0.h>
 #include <melee/lb/lb_00F9.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/gobj.h>
+#include <sysdolphin/baselib/gobjobject.h>
+#include <sysdolphin/baselib/gobjproc.h>
+#include <sysdolphin/baselib/jobj.h>
+#include <sysdolphin/baselib/psstructs.h>
+#include <sysdolphin/baselib/random.h>
 
 struct grGarden_YakumonoParam {
     float x0;

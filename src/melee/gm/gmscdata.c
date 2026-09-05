@@ -43,7 +43,6 @@
 #include "gmvsmelee.h"
 #include "gmvsmode.h"
 #include "types.h"
-
 #include <melee/if/ifprize.h>
 #include <melee/mn/mncharsel.h>
 #include <melee/mn/mnmain.h>

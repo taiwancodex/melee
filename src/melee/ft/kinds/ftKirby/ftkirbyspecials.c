@@ -1,15 +1,12 @@
-#include "ftkirby.h"
-#include "types.h"
-
-#include <placeholder.h>
-
-#include "forward.h"
 #include <melee/ft/forward.h>
 #include <sysdolphin/baselib/forward.h>
 
+#include <placeholder.h>
 #include <stddef.h>
-#include <sysdolphin/baselib/debug.h>
-#include <sysdolphin/baselib/gobj.h>
+
+#include "forward.h"
+#include "ftkirby.h"
+#include "types.h"
 #include <melee/ef/efsync.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
@@ -23,6 +20,8 @@
 #include <melee/ft/types.h>
 #include <melee/it/kinds/itkirbyhammer.h>
 #include <melee/lb/lb_00B0.h>
+#include <sysdolphin/baselib/debug.h>
+#include <sysdolphin/baselib/gobj.h>
 
 char ftKb_Init_803CB510[] = "Other Dead_Proc Existence";
 char ftKb_Init_803CB52C[] = "ftkirbyspecials.c";

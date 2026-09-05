@@ -1,14 +1,13 @@
 #include "ftCo_WarpStar.h"
 
-#include "types.h"
-
-#include "forward.h"
+#include <Runtime/platform.h>
 
 #include <math.h>
 #include <stdbool.h>
+
+#include "forward.h"
+#include "types.h"
 #include <dolphin/mtx.h>
-#include <sysdolphin/baselib/gobj.h>
-#include <sysdolphin/baselib/jobj.h>
 #include <melee/cm/camera.h>
 #include <melee/ef/efasync.h>
 #include <melee/ft/fighter.h>
@@ -22,7 +21,8 @@
 #include <melee/it/item.h>
 #include <melee/it/kinds/itwstar.h>
 #include <melee/mp/mpcoll.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/gobj.h>
+#include <sysdolphin/baselib/jobj.h>
 
 #ifdef MUST_MATCH
 #pragma force_active on

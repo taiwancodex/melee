@@ -1,5 +1,13 @@
 #include "ftCo_Landing.h"
 
+#include <Runtime/platform.h>
+
+#include <melee/ft/forward.h>
+
+#include <placeholder.h>
+#include <stdbool.h>
+
+#include "forward.h"
 #include "ftCo_AppealS.h"
 #include "ftCo_Attack1.h"
 #include "ftCo_Attack100.h"
@@ -18,13 +26,6 @@
 #include "ftCo_SquatWait.h"
 #include "ftCo_Turn.h"
 #include "ftCo_Walk.h"
-
-#include <placeholder.h>
-
-#include "forward.h"
-#include <melee/ft/forward.h>
-
-#include <stdbool.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
 #include <melee/ft/ft_084E.h>
@@ -33,7 +34,6 @@
 #include <melee/ft/inlines.h>
 #include <melee/ft/kinds/ftPeach/ftpeachspecialhi.h>
 #include <melee/ft/types.h>
-#include <Runtime/platform.h>
 
 void ftCo_Landing_Enter(Fighter_GObj* gobj, FtMotionId msid,
                         bool allow_interrupt, MotionFlags flags,

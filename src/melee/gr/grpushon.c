@@ -1,18 +1,16 @@
 #include "grpushon.h"
 
+#include <Runtime/platform.h>
+
+#include <math.h>
+#include <placeholder.h>
+
 #include "granime.h"
 #include "ground.h"
 #include "grzakogenerator.h"
 #include "inlines.h"
 #include "stage.h"
 #include "types.h"
-
-#include <placeholder.h>
-
-#include <math.h>
-#include <sysdolphin/baselib/gobjproc.h>
-#include <sysdolphin/baselib/lobj.h>
-#include <sysdolphin/baselib/random.h>
 #include <melee/cm/camera.h>
 #include <melee/ft/ftdevice.h>
 #include <melee/ft/ftlib.h>
@@ -20,7 +18,9 @@
 #include <melee/lb/lbvector.h>
 #include <melee/lb/types.h>
 #include <melee/mp/mplib.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/gobjproc.h>
+#include <sysdolphin/baselib/lobj.h>
+#include <sysdolphin/baselib/random.h>
 
 struct grPushOn_Entry {
     s32 x0;

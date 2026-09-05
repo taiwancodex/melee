@@ -1,11 +1,10 @@
 #include "ftCo_DamageSong.h"
 
+#include <melee/ft/forward.h>
+
 #include "ftCo_0C35.h"
 #include "ftCo_Lift.h"
 #include "ftCo_Throw.h"
-
-#include <melee/ft/forward.h>
-
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
 #include <melee/ft/ft_084E.h>

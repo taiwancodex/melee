@@ -1,13 +1,15 @@
 #ifndef MELEE_IT_TYPES_H
 #define MELEE_IT_TYPES_H
 
-#include <placeholder.h>
+#include <Runtime/platform.h>
 
-#include "it/forward.h" // IWYU pragma: export
 #include <melee/cm/forward.h>
 #include <melee/it/kinds/forward.h>
 #include <sysdolphin/baselib/forward.h>
 
+#include <placeholder.h>
+
+#include "it/forward.h" // IWYU pragma: export
 #include <dolphin/gx.h>
 #include <dolphin/mtx.h>
 #include <melee/ft/types.h>
@@ -16,7 +18,6 @@
 #include <melee/it/itPKFlash.h>
 #include <melee/it/itPKThunder.h>
 #include <melee/lb/types.h>
-#include <Runtime/platform.h>
 
 struct CameraBoxFlags {
     struct {

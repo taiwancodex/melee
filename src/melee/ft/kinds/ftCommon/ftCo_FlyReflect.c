@@ -1,12 +1,11 @@
 #include "ftCo_FlyReflect.h"
 
+#include <placeholder.h>
+
 #include "ftCo_Damage.h"
 #include "ftCo_DownBound.h"
 #include "ftCo_PassiveCeil.h"
 #include "ftCo_PassiveWall.h"
-
-#include <placeholder.h>
-
 #include <melee/cm/camera.h>
 #include <melee/ef/efasync.h>
 #include <melee/ft/fighter.h>

@@ -2,7 +2,6 @@
 #include "ftCo_Lift.h"
 #include "ftCo_Throw.h"
 #include "inlines.h"
-
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
 #include <melee/ft/ftparts.h>

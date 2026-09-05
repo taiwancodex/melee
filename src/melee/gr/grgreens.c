@@ -1,5 +1,10 @@
 #include "grgreens.h"
 
+#include <Runtime/platform.h>
+
+#include <placeholder.h>
+
+#include "forward.h"
 #include "grdisplay.h"
 #include "grlib.h"
 #include "grmaterial.h"
@@ -7,18 +12,7 @@
 #include "inlines.h"
 #include "stage.h"
 #include "types.h"
-
-#include <placeholder.h>
-
-#include "forward.h"
-
 #include <dolphin/os.h>
-#include <sysdolphin/baselib/debug.h>
-#include <sysdolphin/baselib/gobjgxlink.h>
-#include <sysdolphin/baselib/gobjproc.h>
-#include <sysdolphin/baselib/jobj.h>
-#include <sysdolphin/baselib/memory.h>
-#include <sysdolphin/baselib/random.h>
 #include <melee/cm/camera.h>
 #include <melee/ef/efsync.h>
 #include <melee/ft/ftdevice.h>
@@ -29,7 +23,12 @@
 #include <melee/lb/lb_00F9.h>
 #include <melee/lb/lbaudio_ax.h>
 #include <melee/mp/mplib.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/debug.h>
+#include <sysdolphin/baselib/gobjgxlink.h>
+#include <sysdolphin/baselib/gobjproc.h>
+#include <sysdolphin/baselib/jobj.h>
+#include <sysdolphin/baselib/memory.h>
+#include <sysdolphin/baselib/random.h>
 
 struct grGreens_YakumonoParam {
     int x0_blockTimerMin;

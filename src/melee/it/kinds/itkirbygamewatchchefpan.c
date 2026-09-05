@@ -1,7 +1,6 @@
 #include "itkirbygamewatchchefpan.h"
 
 #include "inlines.h"
-
 #include <melee/ft/kinds/ftKirby/ftkirbyspecialgamewatch.h>
 #include <melee/it/inlines.h>
 #include <melee/it/it_26B1.h>

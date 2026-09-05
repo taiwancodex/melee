@@ -1,15 +1,14 @@
 #include "ftkirbyspecialhi.h"
 
-#include "inlines.h"
-#include "types.h"
-
-#include <placeholder.h>
-
-#include "forward.h"
 #include <melee/ft/forward.h>
 
 #include <math.h>
+#include <placeholder.h>
 #include <stddef.h>
+
+#include "forward.h"
+#include "inlines.h"
+#include "types.h"
 #include <melee/ef/eflib.h>
 #include <melee/ef/efsync.h>
 #include <melee/ft/fighter.h>

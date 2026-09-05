@@ -1,5 +1,12 @@
 #include "ftCo_SquatWait.h"
 
+#include <Runtime/platform.h>
+
+#include <melee/ft/forward.h>
+
+#include <stdbool.h>
+
+#include "forward.h"
 #include "ftCo_AppealS.h"
 #include "ftCo_Attack1.h"
 #include "ftCo_Attack100.h"
@@ -14,11 +21,6 @@
 #include "ftCo_Jump.h"
 #include "ftCo_Pass.h"
 #include "ftCo_SquatRv.h"
-
-#include "forward.h"
-#include <melee/ft/forward.h>
-
-#include <stdbool.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
 #include <melee/ft/ft_084E.h>
@@ -30,7 +32,6 @@
 #include <melee/ft/kinds/ftCLink/ftclink.h>
 #include <melee/ft/kinds/ftLink/ftlinkattackair.h>
 #include <melee/ft/types.h>
-#include <Runtime/platform.h>
 
 /* 0D62C4 */ static void fn_800D62C4(Fighter_GObj* gobj);
 

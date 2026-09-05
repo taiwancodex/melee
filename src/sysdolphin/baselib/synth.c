@@ -1,13 +1,12 @@
 #include "synth.h"
 
+#include <math.h> // IWYU pragma: keep
+#include <placeholder.h>
+#include <string.h>
+
 #include "debug.h"
 #include "devcom.h"
-
 #include "synth.static.h"
-#include <placeholder.h>
-
-#include <math.h> // IWYU pragma: keep
-#include <string.h>
 #include <dolphin/ai.h>
 #include <dolphin/ar.h>
 #include <dolphin/os.h>

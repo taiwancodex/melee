@@ -1,5 +1,10 @@
 #include "it_26B1.h"
 
+#include <sysdolphin/baselib/forward.h>
+
+#include <math.h>
+
+#include "forward.h"
 #include "inlines.h"
 #include "it_2725.h"
 #include "it_3F14.h"
@@ -8,10 +13,6 @@
 #include "item.h"
 #include "ithitbox.h"
 #include "itspawn.h"
-#include "types.h"
-
-#include "forward.h"
-
 #include "kinds/itbat.h"
 #include "kinds/itbombhei.h"
 #include "kinds/itbox.h"
@@ -26,16 +27,13 @@
 #include "kinds/itsscope.h"
 #include "kinds/itsword.h"
 #include "kinds/ittomato.h"
-
-#include <sysdolphin/baselib/forward.h>
-
-#include <math.h>
-#include <sysdolphin/baselib/gobj.h>
-#include <sysdolphin/baselib/jobj.h>
+#include "types.h"
 #include <melee/ft/ftlib.h>
 #include <melee/ft/types.h>
 #include <melee/gm/gm_unsplit.h>
 #include <melee/lb/lb_00B0.h>
+#include <sysdolphin/baselib/gobj.h>
+#include <sysdolphin/baselib/jobj.h>
 
 #if MUST_MATCH
 static inline float my_sqrtf(float x)

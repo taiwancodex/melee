@@ -2,7 +2,6 @@
 
 #include "itzgshell.h"
 #include "itzrshell.h"
-
 #include <melee/cm/camera.h>
 #include <melee/ft/ftlib.h>
 #include <melee/it/inlines.h>

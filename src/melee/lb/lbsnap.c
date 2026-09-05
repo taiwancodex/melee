@@ -1,21 +1,19 @@
 #include "lbarchive.h"
 #include "lbcardnew.h"
 #include "lblanguage.h"
-
 #include "lbsnap.static.h"
-
 #include <melee/it/itspawn.h>
 
 #define _p(x) (lbSnap_80433380.x)
 #include <placeholder.h>
-
 #include <stdio.h>
+
 #include <dolphin/card.h>
 #include <dolphin/os.h>
-#include <sysdolphin/baselib/debug.h>
-#include <sysdolphin/baselib/hsd_3B34.h>
 #include <melee/ft/ft_0877.h>
 #include <melee/gm/gm_unsplit.h>
+#include <sysdolphin/baselib/debug.h>
+#include <sysdolphin/baselib/hsd_3B34.h>
 
 void lbSnap_8001D2BC(void)
 {

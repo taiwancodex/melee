@@ -2,7 +2,6 @@
 
 #include "ftdonkeyheavywait0.h"
 #include "types.h"
-
 #include <melee/ft/ft_084E.h>
 #include <melee/ft/ftanim.h>
 #include <melee/ft/inlines.h>

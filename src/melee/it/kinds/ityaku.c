@@ -1,9 +1,8 @@
 #include "ityaku.h"
 
-#include "types.h"
-
 #include <melee/it/forward.h>
 
+#include "types.h"
 #include <melee/it/inlines.h>
 #include <melee/it/it_26B1.h>
 #include <melee/it/it_3F14.h>

@@ -6,7 +6,6 @@
 #include "ft_0CDD.h"
 #include "ftcommon.h"
 #include "inlines.h"
-
 #include <melee/ef/efsync.h>
 #include <melee/it/kinds/itfflower.h>
 #include <melee/lb/lb_00B0.h>

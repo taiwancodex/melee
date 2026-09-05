@@ -1,16 +1,16 @@
 #include "ftmasterhandcapturemasterhand.h"
 
-#include "ftmasterhandbackdisappear.h"
-#include "ftmasterhandcapturedamagemasterhand.h"
+#include <Runtime/platform.h>
 
 #include <melee/ft/kinds/ftCommon/forward.h>
 
+#include "ftmasterhandbackdisappear.h"
+#include "ftmasterhandcapturedamagemasterhand.h"
 #include <melee/ft/fighter.h>
 #include <melee/ft/ftanim.h>
 #include <melee/ft/ftcommon.h>
 #include <melee/ft/kinds/ftCommon/ftCo_Attack100.h>
 #include <melee/ft/types.h>
-#include <Runtime/platform.h>
 
 void ftMh_CaptureMasterHand_Anim(HSD_GObj* gobj) {}
 

@@ -1,9 +1,8 @@
 #include "hsd_392C.h"
 
-#include "hsd_3933.h"
-
 #include <placeholder.h>
 
+#include "hsd_3933.h"
 #include <dolphin/mcc.h>
 #include <dolphin/os.h>
 

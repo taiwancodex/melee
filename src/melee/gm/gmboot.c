@@ -3,7 +3,6 @@
 #include "gm_unsplit.h"
 #include "gmmain_lib.h"
 #include "types.h"
-
 #include <melee/lb/lbcardgame.h>
 #include <melee/lb/lbcardnew.h>
 #include <melee/lb/lblanguage.h>

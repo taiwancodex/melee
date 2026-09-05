@@ -1,9 +1,11 @@
-#include "ftnana.h"
+#include <Runtime/platform.h>
 
 #include <melee/ft/forward.h>
 #include <melee/ft/kinds/ftPopo/forward.h>
 
 #include <math.h>
+
+#include "ftnana.h"
 #include <dolphin/mtx.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
@@ -20,7 +22,6 @@
 #include <melee/ft/types.h>
 #include <melee/lb/lb_00B0.h>
 #include <melee/pl/player.h>
-#include <Runtime/platform.h>
 
 /* 1230D0 */ static bool ftNn_Init_801230D0(Fighter_GObj* nana_gobj);
 /* 123218 */ static void fn_80123218(Fighter_GObj* nana_gobj);

@@ -2,7 +2,6 @@
 
 #include "inlines.h"
 #include "itlgunbeam.h"
-
 #include <melee/ef/eflib.h>
 #include <melee/ef/efsync.h>
 #include <melee/it/inlines.h>

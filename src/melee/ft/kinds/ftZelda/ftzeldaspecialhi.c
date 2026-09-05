@@ -1,10 +1,12 @@
 #include "ftzeldaspecialhi.h"
 
-#include "types.h"
+#include <Runtime/platform.h>
 
 #include <melee/ft/forward.h>
 
 #include <math.h>
+
+#include "types.h"
 #include <dolphin/mtx.h>
 #include <melee/ef/efsync.h>
 #include <melee/ft/fighter.h>
@@ -25,7 +27,6 @@
 #include <melee/lb/lb_00B0.h>
 #include <melee/lb/lb_00F9.h>
 #include <melee/lb/lbvector.h>
-#include <Runtime/platform.h>
 
 void ftZd_SpecialHi_801396AC(HSD_GObj* gobj)
 {

@@ -1,12 +1,12 @@
 #include "ftgamewatchspecials.h"
 
-#include "ftgamewatch.h"
-#include "types.h"
+#include <Runtime/platform.h>
 
 #include <melee/ft/forward.h>
 
+#include "ftgamewatch.h"
+#include "types.h"
 #include <dolphin/mtx.h>
-#include <sysdolphin/baselib/random.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
 #include <melee/ft/ft_084E.h>
@@ -19,7 +19,7 @@
 #include <melee/it/kinds/itfoods.h>
 #include <melee/it/kinds/itgamewatchjudge.h>
 #include <melee/lb/lb_00B0.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/random.h>
 
 static void ftGw_SpecialS_ItemJudgementExitHitlag(HSD_GObj* gobj);
 static void ftGw_SpecialS_ItemJudgementEnterHitlag(HSD_GObj* gobj);

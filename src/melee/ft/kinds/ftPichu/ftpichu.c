@@ -1,9 +1,10 @@
 #include "ftpichu.h"
 
-#include "types.h"
+#include <Runtime/platform.h>
 
 #include <melee/ft/kinds/ftPikachu/forward.h>
 
+#include "types.h"
 #include <melee/ft/fighter.h>
 #include <melee/ft/ftcamera.h>
 #include <melee/ft/ftparts.h>
@@ -14,7 +15,6 @@
 #include <melee/ft/kinds/ftPikachu/ftpikachuspecials.h>
 #include <melee/ft/types.h>
 #include <melee/it/it_26B1.h>
-#include <Runtime/platform.h>
 
 /* 45A480 */ UnkCostumeStruct ftPc_CostumeList[4];
 

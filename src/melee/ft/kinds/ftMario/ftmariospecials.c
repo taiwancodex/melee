@@ -1,10 +1,11 @@
 #include "ftmariospecials.h"
 
-#include "ftmario.h"
-#include "types.h"
+#include <Runtime/platform.h>
 
 #include <melee/ft/forward.h>
 
+#include "ftmario.h"
+#include "types.h"
 #include <dolphin/mtx.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
@@ -20,7 +21,6 @@
 #include <melee/it/kinds/itmariocape.h>
 #include <melee/lb/lb_00B0.h>
 #include <melee/lb/lb_00F9.h>
-#include <Runtime/platform.h>
 
 static void setCallbacks(Fighter* fp)
 {

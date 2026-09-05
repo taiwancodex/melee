@@ -6,7 +6,6 @@
 #include "itgroundcoll.h"
 #include "ithitbox.h"
 #include "itzako.h"
-
 #include "kinds/itcerebi.h"
 #include "kinds/itchicorita.h"
 #include "kinds/itentei.h"
@@ -38,8 +37,6 @@
 #include "kinds/ittogepy.h"
 #include "kinds/ittosakinto.h"
 #include "kinds/itunknown.h"
-
-#include <sysdolphin/baselib/random.h>
 #include <melee/db/db.h>
 #include <melee/ef/efsync.h>
 #include <melee/ft/fighter.h>
@@ -51,6 +48,7 @@
 #include <melee/pl/plbonuslib.h>
 #include <melee/pl/plstale.h>
 #include <melee/pl/pltrick.h>
+#include <sysdolphin/baselib/random.h>
 
 #define IT_M_PI_2 1.5707963267948966
 

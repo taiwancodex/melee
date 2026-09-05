@@ -1,14 +1,10 @@
 #include "itkyasarin.h"
 
-#include "itkyasarinegg.h"
-
+#include <math.h>
 #include <placeholder.h>
 
 #include "forward.h"
-
-#include <math.h>
-#include <sysdolphin/baselib/jobj.h>
-#include <sysdolphin/baselib/random.h>
+#include "itkyasarinegg.h"
 #include <melee/gr/grinishie2.h>
 #include <melee/it/inlines.h>
 #include <melee/it/it_26B1.h>
@@ -19,6 +15,8 @@
 #include <melee/it/ithitbox.h>
 #include <melee/it/itmaplib.h>
 #include <melee/it/itzako.h>
+#include <sysdolphin/baselib/jobj.h>
+#include <sysdolphin/baselib/random.h>
 
 ItemStateTable it_803F90D0[] = {
     {

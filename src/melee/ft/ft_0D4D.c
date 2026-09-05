@@ -11,7 +11,6 @@
 #include "ftcommon.h"
 #include "ftlib.h"
 #include "ftwalkcommon.h"
-
 #include "kinds/ftCommon/ftCo_AirCatch.h"
 #include "kinds/ftCommon/ftCo_AppealS.h"
 #include "kinds/ftCommon/ftCo_Attack100.h"
@@ -23,7 +22,6 @@
 #include "kinds/ftCommon/ftCo_SpecialAir.h"
 #include "kinds/ftCommon/ftCo_Squat.h"
 #include "kinds/ftCommon/ftCo_Turn.h"
-
 #include <melee/ef/efsync.h>
 #include <melee/gr/stage.h>
 #include <melee/it/kinds/it_2E5A.h>

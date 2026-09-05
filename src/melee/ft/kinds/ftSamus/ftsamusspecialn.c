@@ -1,12 +1,14 @@
 #include "ftsamusspecialn.h"
 
-#include "inlines.h"
-#include "types.h"
+#include <Runtime/platform.h>
 
 #include <melee/ft/forward.h>
 #include <sysdolphin/baselib/forward.h>
 
 #include <math.h>
+
+#include "inlines.h"
+#include "types.h"
 #include <dolphin/mtx.h>
 #include <melee/ef/efsync.h>
 #include <melee/ft/fighter.h>
@@ -26,7 +28,6 @@
 #include <melee/ft/types.h>
 #include <melee/it/kinds/itsamusmissile.h>
 #include <melee/lb/lb_00B0.h>
-#include <Runtime/platform.h>
 
 static void ftSamus_801293BC_inner(HSD_GObj* gobj)
 {

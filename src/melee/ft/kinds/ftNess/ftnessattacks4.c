@@ -1,10 +1,11 @@
 #include "ftnessattacks4.h"
 
-#include "ftness.h"
-#include "types.h"
+#include <Runtime/platform.h>
 
 #include <melee/ft/forward.h>
 
+#include "ftness.h"
+#include "types.h"
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
 #include <melee/ft/ft_084E.h>
@@ -15,7 +16,6 @@
 #include <melee/ft/kinds/ftCommon/ftCo_Wait.h>
 #include <melee/ft/types.h>
 #include <melee/it/kinds/itnessbat.h>
-#include <Runtime/platform.h>
 
 /// 0x80114BF4
 void ftNs_AttackS4_OnReflect(

@@ -1,9 +1,8 @@
 #include "ftdonkeyms3450.h"
 
-#include "types.h"
-
 #include <melee/ft/forward.h>
 
+#include "types.h"
 #include <melee/ft/inlines.h>
 #include <melee/ft/kinds/ftCommon/ftCo_Turn.h>
 

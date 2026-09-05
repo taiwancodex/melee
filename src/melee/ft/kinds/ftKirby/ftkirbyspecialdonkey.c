@@ -1,15 +1,14 @@
 #include "ftkirbyspecialdonkey.h"
 
-#include "ftkirby.h"
-#include "types.h"
-
-#include <placeholder.h>
-
-#include "forward.h"
 #include <melee/ft/forward.h>
 #include <melee/ft/kinds/ftDonkey/forward.h>
 
+#include <placeholder.h>
 #include <stddef.h>
+
+#include "forward.h"
+#include "ftkirby.h"
+#include "types.h"
 #include <melee/ef/eflib.h>
 #include <melee/ef/efsync.h>
 #include <melee/ft/fighter.h>

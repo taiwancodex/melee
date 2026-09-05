@@ -1,7 +1,8 @@
 #include "itfreezer.h"
 
-#include "inlines.h"
+#include <Runtime/platform.h>
 
+#include "inlines.h"
 #include <melee/gr/stage.h>
 #include <melee/it/inlines.h>
 #include <melee/it/it_26B1.h>
@@ -9,7 +10,6 @@
 #include <melee/it/it_279C.h>
 #include <melee/it/item.h>
 #include <melee/it/itgroundcoll.h>
-#include <Runtime/platform.h>
 
 ItemStateTable it_803F7C70[] = {
     { 0, itFreezer_UnkMotion0_Anim, itFreezer_UnkMotion0_Phys,

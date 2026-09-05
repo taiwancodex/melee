@@ -11,11 +11,8 @@
 #include "ftlib.h"
 #include "ftmetal.h"
 #include "ftparts.h"
-
 #include "kinds/ftCommon/ftCo_DamageIce.h"
 #include "kinds/ftCommon/ftCo_Throw.h"
-
-#include <sysdolphin/baselib/random.h>
 #include <melee/cm/camera.h>
 #include <melee/ef/efasync.h>
 #include <melee/ef/efsync.h>
@@ -26,6 +23,7 @@
 #include <melee/pl/player.h>
 #include <melee/pl/plbonuslib.h>
 #include <melee/pl/plstale.h>
+#include <sysdolphin/baselib/random.h>
 
 const Quaternion lbl_803B7500 = { 0, 3.1415927f, 0, 0 };
 

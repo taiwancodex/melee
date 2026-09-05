@@ -1,7 +1,6 @@
 #include "itsonans.h"
 
 #include "inlines.h"
-
 #include <melee/it/inlines.h>
 #include <melee/it/it_26B1.h>
 #include <melee/it/it_2725.h>

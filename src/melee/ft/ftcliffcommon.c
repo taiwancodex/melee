@@ -1,5 +1,7 @@
 #include "ftcliffcommon.h"
 
+#include <Runtime/platform.h>
+
 #include "fighter.h"
 #include "ft_081B.h"
 #include "ft_0877.h"
@@ -7,18 +9,15 @@
 #include "ftanim.h"
 #include "ftcamera.h"
 #include "ftcommon.h"
-#include "types.h"
-
 #include "kinds/ftCommon/ftCo_CliffWait.h"
 #include "kinds/ftCommon/ftCo_Fall.h"
 #include "kinds/ftCommon/ftCo_StopCeil.h"
 #include "kinds/ftCommon/types.h"
-
+#include "types.h"
 #include <dolphin/mtx.h>
 #include <melee/ef/efasync.h>
 #include <melee/mp/mplib.h>
 #include <melee/pl/plbonuslib.h>
-#include <Runtime/platform.h>
 
 bool ftCliffCommon_80081298(Fighter_GObj* gobj)
 {

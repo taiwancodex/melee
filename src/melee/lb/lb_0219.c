@@ -8,13 +8,12 @@
 
 #include "lb_0219.h"
 
+#include <placeholder.h>
+
 #include "lb_013B.h"
 #include "lbarchive.h"
 #include "lbbgflash.h"
 #include "types.h"
-
-#include <placeholder.h>
-
 #include <dolphin/gx/GXStruct.h>
 #include <sysdolphin/baselib/gobj.h>
 #include <sysdolphin/baselib/gobjobject.h>

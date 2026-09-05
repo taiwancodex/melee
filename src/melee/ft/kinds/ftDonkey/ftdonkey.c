@@ -1,5 +1,10 @@
 #include "ftdonkey.h"
 
+#include <Runtime/platform.h>
+
+#include <melee/lb/forward.h>
+
+#include "forward.h"
 #include "ftdonkeyheavyfall.h"
 #include "ftdonkeyheavyjump.h"
 #include "ftdonkeyheavylanding.h"
@@ -12,10 +17,6 @@
 #include "ftdonkeyspecialn.h"
 #include "ftdonkeyspecials.h"
 #include "types.h"
-
-#include "forward.h"
-#include <melee/lb/forward.h>
-
 #include <dolphin/mtx.h>
 #include <melee/ft/ftcamera.h>
 #include <melee/ft/ftcolanim.h>
@@ -33,7 +34,6 @@
 #include <melee/ft/kinds/ftCommon/ftCo_CargoWalk.h>
 #include <melee/lb/lbanim.h>
 #include <melee/mp/mplib.h>
-#include <Runtime/platform.h>
 
 /* 459CA0 */ UnkCostumeStruct ftDk_CostumeList[5];
 

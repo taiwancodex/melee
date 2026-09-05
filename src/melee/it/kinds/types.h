@@ -1,12 +1,13 @@
 #ifndef MELEE_IT_ITEMS_TYPES_H
 #define MELEE_IT_ITEMS_TYPES_H
 
+#include <Runtime/platform.h>
+
+#include <sysdolphin/baselib/forward.h>
+
 #include <placeholder.h>
 
 #include "it/kinds/forward.h" // IWYU pragma: export
-#include <sysdolphin/baselib/forward.h>
-
-#include <Runtime/platform.h>
 
 /// @todo Size unknown.
 struct ItemStateTable {

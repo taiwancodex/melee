@@ -1,10 +1,11 @@
 #include "ftzeldaspeciallw.h"
 
-#include "types.h"
+#include <Runtime/platform.h>
 
-#include "forward.h"
 #include <melee/ft/forward.h>
 
+#include "forward.h"
+#include "types.h"
 #include <dolphin/mtx.h>
 #include <melee/ef/efsync.h>
 #include <melee/ft/fighter.h>
@@ -21,7 +22,6 @@
 #include <melee/it/kinds/itzeldadinfire.h>
 #include <melee/lb/lb_00B0.h>
 #include <melee/lb/lb_00F9.h>
-#include <Runtime/platform.h>
 
 /// 8013ADB4 - 8013AE30 (124 bytes)
 /// https://decomp.me/scratch/LbMVE

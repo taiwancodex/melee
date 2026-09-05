@@ -5,7 +5,6 @@
 #include "gmmovieend.h"
 #include "gmvsmelee.h"
 #include "types.h"
-
 #include <melee/if/if_2FD9.h>
 
 GameModeState gm_Mode_TinyVs_States[] = {

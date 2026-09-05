@@ -1,19 +1,39 @@
 #include "toy.h"
 
-#include "tylist.h"
-#include "types.h"
-
-#include <placeholder.h>
+#include <Runtime/platform.h>
 
 #include <melee/if/forward.h>
 
 #include <m2c_macros.h>
 #include <math.h>
+#include <placeholder.h>
 #include <stddef.h>
 #include <string.h>
+
+#include "tylist.h"
+#include "types.h"
 #include <dolphin/gx.h>
 #include <dolphin/mtx.h>
 #include <dolphin/os.h>
+#include <melee/db/db.h>
+#include <melee/gm/gm_1601.h>
+#include <melee/gm/gm_16AE.h>
+#include <melee/gm/gm_16F1.h>
+#include <melee/gm/gm_1A3F.h>
+#include <melee/gm/gm_1A45.h>
+#include <melee/gm/gmmain_lib.h>
+#include <melee/if/textdraw.h>
+#include <melee/if/textlib.h>
+#include <melee/lb/lb_00B0.h>
+#include <melee/lb/lb_00CE.h>
+#include <melee/lb/lbarchive.h>
+#include <melee/lb/lbaudio_ax.h>
+#include <melee/lb/lblanguage.h>
+#include <melee/lb/lbspdisplay.h>
+#include <melee/lb/lbvector.h>
+#include <melee/mn/inlines.h>
+#include <melee/mn/mnmain.h>
+#include <melee/sc/types.h>
 #include <sysdolphin/baselib/archive.h>
 #include <sysdolphin/baselib/cobj.h>
 #include <sysdolphin/baselib/controller.h>
@@ -36,26 +56,6 @@
 #include <sysdolphin/baselib/state.h>
 #include <sysdolphin/baselib/tobj.h>
 #include <sysdolphin/baselib/wobj.h>
-#include <melee/db/db.h>
-#include <melee/gm/gm_1601.h>
-#include <melee/gm/gm_16AE.h>
-#include <melee/gm/gm_16F1.h>
-#include <melee/gm/gm_1A3F.h>
-#include <melee/gm/gm_1A45.h>
-#include <melee/gm/gmmain_lib.h>
-#include <melee/if/textdraw.h>
-#include <melee/if/textlib.h>
-#include <melee/lb/lb_00B0.h>
-#include <melee/lb/lb_00CE.h>
-#include <melee/lb/lbarchive.h>
-#include <melee/lb/lbaudio_ax.h>
-#include <melee/lb/lblanguage.h>
-#include <melee/lb/lbspdisplay.h>
-#include <melee/lb/lbvector.h>
-#include <melee/mn/inlines.h>
-#include <melee/mn/mnmain.h>
-#include <melee/sc/types.h>
-#include <Runtime/platform.h>
 
 typedef struct ToyDisplayList {
     /* 0x000 */ ToyListEntry entries[13];

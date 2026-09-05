@@ -1,7 +1,6 @@
 #include "itseakvanish.h"
 
 #include "inlines.h"
-
 #include <melee/db/db.h>
 #include <melee/it/inlines.h>
 #include <melee/it/it_26B1.h>

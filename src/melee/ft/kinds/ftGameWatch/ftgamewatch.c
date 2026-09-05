@@ -1,5 +1,7 @@
 #include "ftgamewatch.h"
 
+#include <melee/ft/kinds/ftCommon/forward.h>
+
 #include "ftgamewatchattack100.h"
 #include "ftgamewatchattack11.h"
 #include "ftgamewatchattackair.h"
@@ -10,9 +12,6 @@
 #include "ftgamewatchspecialn.h"
 #include "ftgamewatchspecials.h"
 #include "types.h"
-
-#include <melee/ft/kinds/ftCommon/forward.h>
-
 #include <dolphin/mtx.h>
 #include <melee/ft/ftcamera.h>
 #include <melee/ft/ftcolanim.h>

@@ -1,15 +1,13 @@
-#include "cobj.h"
-#include "gobjobject.h"
-#include "sislib.h"
-
-#include "sislib.static.h"
-
-#include "sislib_font.h"
-#include "wobj.h"
-
 #include <printf.h> // IWYU pragma: keep
 #include <stdarg.h>
 #include <stdio.h>
+
+#include "cobj.h"
+#include "gobjobject.h"
+#include "sislib.h"
+#include "sislib.static.h"
+#include "sislib_font.h"
+#include "wobj.h"
 #include <dolphin/gx.h>
 #include <dolphin/mtx.h>
 #include <dolphin/types.h>

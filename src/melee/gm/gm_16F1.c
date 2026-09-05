@@ -2,13 +2,9 @@
 
 #include "gm_1601.h"
 #include "gm_16AE.h"
-
 #include "gm_16F1.static.h"
-
 #include "gm_unsplit.h"
 #include "gmmain_lib.h"
-
-#include <sysdolphin/baselib/sislib.h>
 #include <melee/if/textlib.h>
 #include <melee/lb/lb_00B0.h>
 #include <melee/lb/lblanguage.h>
@@ -18,6 +14,7 @@
 #include <melee/pl/plbonus.h>
 #include <melee/pl/plbonuslib.h>
 #include <melee/ty/toy.h>
+#include <sysdolphin/baselib/sislib.h>
 
 struct lbl_804D65A8_t {
     /* 0x00 */ u8 x0;

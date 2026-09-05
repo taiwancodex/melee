@@ -1,7 +1,8 @@
 #include "textdraw.h"
 
-#include "types.h"
+#include <Runtime/platform.h>
 
+#include "types.h"
 #include <dolphin/mtx.h>
 #include <sysdolphin/baselib/cobj.h>
 #include <sysdolphin/baselib/fog.h>
@@ -14,7 +15,6 @@
 #include <sysdolphin/baselib/lobj.h>
 #include <sysdolphin/baselib/video.h>
 #include <sysdolphin/baselib/wobj.h>
-#include <Runtime/platform.h>
 
 /// .data
 /* 3FDC20 */ static HSD_WObjDesc devtext_eyepos = {

@@ -1,14 +1,13 @@
 #include "ftCo_Barrel.h"
 
+#include <melee/ft/forward.h>
+
+#include "forward.h"
 #include "ftCo_Damage.h"
 #include "ftCo_Lift.h"
 #include "ftCo_Throw.h"
 #include "inlines.h"
 #include "types.h"
-
-#include "forward.h"
-#include <melee/ft/forward.h>
-
 #include <melee/ft/fighter.h>
 #include <melee/ft/ftcoll.h>
 #include <melee/ft/ftcommon.h>

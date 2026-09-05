@@ -1,12 +1,11 @@
 #include "ftCo_DamageBind.h"
 
+#include <melee/ft/forward.h>
+
+#include "forward.h"
 #include "ftCo_DamageFall.h"
 #include "ftCo_Lift.h"
 #include "ftCo_Throw.h"
-
-#include "forward.h"
-#include <melee/ft/forward.h>
-
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
 #include <melee/ft/ft_084E.h>

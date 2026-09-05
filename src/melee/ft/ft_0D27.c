@@ -1,6 +1,11 @@
 #include "ft_0D27.h"
 
+#include <Runtime/platform.h>
+
+#include <stdbool.h>
+
 #include "fighter.h"
+#include "forward.h"
 #include "ft_081B.h"
 #include "ft_0877.h"
 #include "ftcamera.h"
@@ -8,22 +13,16 @@
 #include "ftcommon.h"
 #include "ftlib.h"
 #include "inlines.h"
-#include "types.h"
-
-#include "forward.h"
 #include "kinds/ftCommon/forward.h"
-
 #include "kinds/ftCommon/ftCo_Attack100.h"
 #include "kinds/ftCommon/ftCo_CaptureCut.h"
 #include "kinds/ftCommon/ftCo_Fall.h"
 #include "kinds/ftCommon/ftCo_FallAerial.h"
 #include "kinds/ftCommon/ftCo_FallSpecial.h"
 #include "kinds/ftCommon/ftCo_Lift.h"
-
-#include <stdbool.h>
-#include <sysdolphin/baselib/jobj.h>
+#include "types.h"
 #include <melee/it/kinds/itkinoko.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/jobj.h>
 
 void ftCo_800D2770(Fighter_GObj* gobj, f32 arg8)
 {

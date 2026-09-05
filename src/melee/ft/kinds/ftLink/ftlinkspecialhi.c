@@ -1,10 +1,11 @@
 #include "ftlinkspecialhi.h"
 
-#include "types.h"
+#include <Runtime/platform.h>
 
 #include <melee/ft/forward.h>
 #include <sysdolphin/baselib/forward.h>
 
+#include "types.h"
 #include <melee/ef/efsync.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
@@ -18,7 +19,6 @@
 #include <melee/ft/kinds/ftCommon/ftCo_FallSpecial.h>
 #include <melee/ft/kinds/ftCommon/ftCo_Landing.h>
 #include <melee/ft/types.h>
-#include <Runtime/platform.h>
 
 /* 0EBA4C */ static void onAccessory4(HSD_GObj* gobj);
 /* 0EBE64 */ static void doColl(HSD_GObj* gobj);

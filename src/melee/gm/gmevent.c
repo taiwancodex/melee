@@ -1,17 +1,13 @@
 #include "gmevent.h"
 
+#include <melee/ft/forward.h>
+#include <melee/pl/forward.h>
+
 #include "gm_1601.h"
 #include "gm_16F1.h"
 #include "gm_unsplit.h"
 #include "gmmain_lib.h"
 #include "types.h"
-
-#include <melee/ft/forward.h>
-#include <melee/pl/forward.h>
-
-#include <sysdolphin/baselib/gobjplink.h>
-#include <sysdolphin/baselib/gobjproc.h>
-#include <sysdolphin/baselib/random.h>
 #include <melee/cm/camera.h>
 #include <melee/ft/ftbosslib.h>
 #include <melee/ft/ftlib.h>
@@ -27,6 +23,9 @@
 #include <melee/mn/types.h>
 #include <melee/pl/player.h>
 #include <melee/pl/plbonuslib.h>
+#include <sysdolphin/baselib/gobjplink.h>
+#include <sysdolphin/baselib/gobjproc.h>
+#include <sysdolphin/baselib/random.h>
 
 #ifdef MUST_MATCH
 #include <MetroTRK/intrinsics.h>

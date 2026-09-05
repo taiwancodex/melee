@@ -1,13 +1,14 @@
 #include "ftcrazyhandfingerbeam.h"
 
+#include <Runtime/platform.h>
+
+#include <sysdolphin/baselib/forward.h>
+
 #include "ftcrazyhandcapturecrazyhand.h"
 #include "ftcrazyhandcapturewaitcrazyhand.h"
 #include "ftcrazyhandfingergun2.h"
 #include "ftcrazyhandtagcancel.h"
 #include "types.h"
-
-#include <sysdolphin/baselib/forward.h>
-
 #include <dolphin/mtx.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_084E.h>
@@ -18,7 +19,6 @@
 #include <melee/ft/types.h>
 #include <melee/lb/lbvector.h>
 #include <melee/pl/player.h>
-#include <Runtime/platform.h>
 
 static inline float my_sqrtf(float x)
 {

@@ -1,17 +1,14 @@
-#include "ftkirby.h"
-#include "inlines.h"
-#include "types.h"
-
-#include <placeholder.h>
-
-#include "forward.h"
 #include <melee/ft/forward.h>
 #include <sysdolphin/baselib/forward.h>
 
 #include <math.h>
+#include <placeholder.h>
 #include <stddef.h>
-#include <sysdolphin/baselib/gobj.h>
-#include <sysdolphin/baselib/random.h>
+
+#include "forward.h"
+#include "ftkirby.h"
+#include "inlines.h"
+#include "types.h"
 #include <melee/cm/camera.h>
 #include <melee/ef/eflib.h>
 #include <melee/ef/efsync.h>
@@ -28,6 +25,8 @@
 #include <melee/ft/types.h>
 #include <melee/lb/lbvector.h>
 #include <melee/mp/mplib.h>
+#include <sysdolphin/baselib/gobj.h>
+#include <sysdolphin/baselib/random.h>
 
 struct ftKb_Init_803CB490_layout {
     char pad[0x74];

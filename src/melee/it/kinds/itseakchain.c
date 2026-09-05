@@ -1,21 +1,15 @@
 #include "itseakchain.h"
 
-#include "inlines.h"
-#include "itlinkhookshot.h"
-
-#include "itseakchain.static.h"
+#include <Runtime/platform.h>
 
 #include <melee/ft/kinds/ftSeak/forward.h>
 #include <melee/it/forward.h>
 #include <sysdolphin/baselib/forward.h>
 
+#include "inlines.h"
+#include "itlinkhookshot.h"
+#include "itseakchain.static.h"
 #include <dolphin/mtx.h>
-#include <sysdolphin/baselib/gobj.h>
-#include <sysdolphin/baselib/gobjgxlink.h>
-#include <sysdolphin/baselib/gobjobject.h>
-#include <sysdolphin/baselib/gobjplink.h>
-#include <sysdolphin/baselib/gobjuserdata.h>
-#include <sysdolphin/baselib/jobj.h>
 #include <melee/ft/ftcoll.h>
 #include <melee/ft/ftlib.h>
 #include <melee/ft/inlines.h>
@@ -28,7 +22,12 @@
 #include <melee/lb/lbaudio_ax.h>
 #include <melee/lb/lbvector.h>
 #include <melee/mp/mpcoll.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/gobj.h>
+#include <sysdolphin/baselib/gobjgxlink.h>
+#include <sysdolphin/baselib/gobjobject.h>
+#include <sysdolphin/baselib/gobjplink.h>
+#include <sysdolphin/baselib/gobjuserdata.h>
+#include <sysdolphin/baselib/jobj.h>
 
 ItemStateTable it_803F7438[] = {
     { -1, itSeakchain_UnkMotion4_Anim, NULL, NULL },

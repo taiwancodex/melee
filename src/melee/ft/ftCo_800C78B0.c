@@ -4,14 +4,11 @@
 #include "ftanim.h"
 #include "ftcoll.h"
 #include "ftcommon.h"
-#include "types.h"
-
 #include "kinds/ftCommon/forward.h"
-
 #include "kinds/ftCommon/ftCo_Damage.h"
 #include "kinds/ftCommon/ftCo_Lift.h"
 #include "kinds/ftCommon/ftCo_Throw.h"
-
+#include "types.h"
 #include <melee/it/it_26B1.h>
 #include <melee/it/kinds/itlikelike.h>
 #include <melee/lb/lbcollision.h>

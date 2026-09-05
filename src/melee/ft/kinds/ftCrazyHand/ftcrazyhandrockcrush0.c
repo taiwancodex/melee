@@ -1,14 +1,14 @@
 #include "ftcrazyhandrockcrush0.h"
 
-#include "ftcrazyhandtagcancel.h"
-#include "types.h"
-
-#include <placeholder.h>
+#include <Runtime/platform.h>
 
 #include <sysdolphin/baselib/forward.h>
 
+#include <placeholder.h>
+
+#include "ftcrazyhandtagcancel.h"
+#include "types.h"
 #include <dolphin/mtx.h>
-#include <sysdolphin/baselib/random.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_084E.h>
 #include <melee/ft/ft_0877.h>
@@ -18,7 +18,7 @@
 #include <melee/ft/types.h>
 #include <melee/lb/lbvector.h>
 #include <melee/pl/player.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/random.h>
 
 static inline float my_sqrtf(float x)
 {

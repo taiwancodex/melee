@@ -1,8 +1,9 @@
 #ifndef _id_h_
 #define _id_h_
 
-#include <sysdolphin/baselib/objalloc.h>
 #include <Runtime/platform.h>
+
+#include <sysdolphin/baselib/objalloc.h>
 
 typedef struct _IDEntry {
     struct _IDEntry* next;

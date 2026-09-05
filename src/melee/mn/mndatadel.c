@@ -1,23 +1,11 @@
 #include "mndatadel.h"
 
-#include "inlines.h"
-
-#include "mndatadel.static.h"
-
-#include "mnmain.h"
-#include "mnmainrule.h"
-
 #include <placeholder.h>
 
-#include <sysdolphin/baselib/debug.h>
-#include <sysdolphin/baselib/gobj.h>
-#include <sysdolphin/baselib/gobjgxlink.h>
-#include <sysdolphin/baselib/gobjobject.h>
-#include <sysdolphin/baselib/gobjplink.h>
-#include <sysdolphin/baselib/gobjproc.h>
-#include <sysdolphin/baselib/gobjuserdata.h>
-#include <sysdolphin/baselib/jobj.h>
-#include <sysdolphin/baselib/memory.h>
+#include "inlines.h"
+#include "mndatadel.static.h"
+#include "mnmain.h"
+#include "mnmainrule.h"
 #include <melee/gm/gm_1601.h>
 #include <melee/gm/gm_16F1.h>
 #include <melee/gm/gm_1A36.h>
@@ -29,6 +17,15 @@
 #include <melee/lb/lbspdisplay.h>
 #include <melee/sc/types.h>
 #include <melee/ty/toy.h>
+#include <sysdolphin/baselib/debug.h>
+#include <sysdolphin/baselib/gobj.h>
+#include <sysdolphin/baselib/gobjgxlink.h>
+#include <sysdolphin/baselib/gobjobject.h>
+#include <sysdolphin/baselib/gobjplink.h>
+#include <sysdolphin/baselib/gobjproc.h>
+#include <sysdolphin/baselib/gobjuserdata.h>
+#include <sysdolphin/baselib/jobj.h>
+#include <sysdolphin/baselib/memory.h>
 
 HSD_Text* mnDataDel_804D6C6C;
 HSD_GObj* mnDataDel_804D6C68;

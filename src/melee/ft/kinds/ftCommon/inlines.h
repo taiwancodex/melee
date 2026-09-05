@@ -1,11 +1,12 @@
 #ifndef MELEE_FT_CHARA_FTCOMMON_INLINES_H
 #define MELEE_FT_CHARA_FTCOMMON_INLINES_H
 
-#include <placeholder.h>
+#include <Runtime/platform.h>
 
 #include <sysdolphin/baselib/forward.h>
 
-#include <sysdolphin/baselib/gobj.h>
+#include <placeholder.h>
+
 #include <melee/ef/efasync.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ftcoll.h>
@@ -14,7 +15,7 @@
 #include <melee/ft/kinds/ftCommon/ftCo_Thrown.h>
 #include <melee/ft/kinds/ftCommon/types.h>
 #include <melee/ft/types.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/gobj.h>
 
 static inline void ftCo_SpawnEf(Fighter_GObj* gobj, HSD_JObj* joint, u32 arg2,
                                 enum_t arg3)

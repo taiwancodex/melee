@@ -1,10 +1,10 @@
 #include "ftmasterhandwalk.h"
 
-#include "ftmasterhandslap.h"
-#include "ftmasterhandwait12.h"
+#include <Runtime/platform.h>
 
 #include "forward.h"
-
+#include "ftmasterhandslap.h"
+#include "ftmasterhandwait12.h"
 #include <dolphin/mtx.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_084E.h>
@@ -15,7 +15,6 @@
 #include <melee/lb/lbvector.h>
 #include <melee/mp/mplib.h>
 #include <melee/pl/player.h>
-#include <Runtime/platform.h>
 
 void ftMh_WalkShoot_Anim(HSD_GObj* gobj)
 {

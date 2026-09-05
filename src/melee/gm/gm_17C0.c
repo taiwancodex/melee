@@ -1,21 +1,14 @@
+#include <Runtime/platform.h>
+
+#include <sysdolphin/baselib/forward.h>
+
+#include "forward.h"
 #include "gm_18A1.h"
 #include "gm_unsplit.h"
 #include "gmmain_lib.h"
 #include "gmregclear.h"
 #include "gmregcommon.h"
 #include "types.h"
-
-#include "forward.h"
-#include <sysdolphin/baselib/forward.h>
-
-#include <sysdolphin/baselib/aobj.h>
-#include <sysdolphin/baselib/dobj.h>
-#include <sysdolphin/baselib/gobj.h>
-#include <sysdolphin/baselib/gobjobject.h>
-#include <sysdolphin/baselib/gobjproc.h>
-#include <sysdolphin/baselib/mobj.h>
-#include <sysdolphin/baselib/random.h>
-#include <sysdolphin/baselib/tobj.h>
 #include <melee/cm/camera.h>
 #include <melee/db/db.h>
 #include <melee/ft/ft_0877.h>
@@ -32,7 +25,14 @@
 #include <melee/lb/lbtime.h>
 #include <melee/pl/player.h>
 #include <melee/ty/toy.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/aobj.h>
+#include <sysdolphin/baselib/dobj.h>
+#include <sysdolphin/baselib/gobj.h>
+#include <sysdolphin/baselib/gobjobject.h>
+#include <sysdolphin/baselib/gobjproc.h>
+#include <sysdolphin/baselib/mobj.h>
+#include <sysdolphin/baselib/random.h>
+#include <sysdolphin/baselib/tobj.h>
 
 typedef struct lbl_804706D8_t {
     s16 x0;

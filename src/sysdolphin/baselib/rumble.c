@@ -4,7 +4,6 @@
 
 /// @todo Circular dependency
 #include "controller.h" // IWYU pragma: keep
-
 #include <dolphin/os.h>
 #include <dolphin/pad.h>
 

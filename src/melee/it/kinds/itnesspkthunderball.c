@@ -1,10 +1,9 @@
 #include "itnesspkthunderball.h"
 
-#include "itnesspkthundertrail.h"
-
+#include <math.h>
 #include <placeholder.h>
 
-#include <math.h>
+#include "itnesspkthundertrail.h"
 #include <melee/db/db.h>
 #include <melee/ft/ftlib.h>
 #include <melee/ft/kinds/ftNess/ftnessspecialhi.h>

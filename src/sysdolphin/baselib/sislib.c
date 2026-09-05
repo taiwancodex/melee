@@ -1,5 +1,8 @@
 #include "sislib.h"
 
+#include <printf.h> // IWYU pragma: keep
+#include <stdio.h>
+
 #include "cobj.h"
 #include "gobj.h"
 #include "gobjgxlink.h"
@@ -8,9 +11,6 @@
 #include "gobjuserdata.h"
 #include "memory.h"
 #include "wobj.h"
-
-#include <printf.h> // IWYU pragma: keep
-#include <stdio.h>
 #include <dolphin/gx.h>
 #include <dolphin/mtx.h>
 #include <dolphin/os.h>

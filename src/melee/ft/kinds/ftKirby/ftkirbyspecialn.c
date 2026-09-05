@@ -1,16 +1,13 @@
-#include "ftkirby.h"
-#include "types.h"
-
-#include <placeholder.h>
-
-#include "forward.h"
 #include <melee/ft/forward.h>
 #include <sysdolphin/baselib/forward.h>
 
 #include <math.h>
+#include <placeholder.h>
 #include <stddef.h>
-#include <sysdolphin/baselib/gobj.h>
-#include <sysdolphin/baselib/random.h>
+
+#include "forward.h"
+#include "ftkirby.h"
+#include "types.h"
 #include <melee/ef/efasync.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_081B.h>
@@ -41,6 +38,8 @@
 #include <melee/lb/lb_00B0.h>
 #include <melee/lb/lbanim.h>
 #include <melee/mp/mpcoll.h>
+#include <sysdolphin/baselib/gobj.h>
+#include <sysdolphin/baselib/random.h>
 
 static MotionFlags const ftKb_MF_SpecialN_Coll =
     ftCommon_GroundAirColl_MF | Ft_MF_KeepGfx;

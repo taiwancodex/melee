@@ -1,10 +1,10 @@
 #include "ftmasterhandfingergun.h"
 
+#include <Runtime/platform.h>
+
 #include "ftmasterhandwait12.h"
 #include "types.h"
-
 #include <dolphin/mtx.h>
-#include <sysdolphin/baselib/random.h>
 #include <melee/ft/fighter.h>
 #include <melee/ft/ft_084E.h>
 #include <melee/ft/ftanim.h>
@@ -15,7 +15,7 @@
 #include <melee/lb/lb_00B0.h>
 #include <melee/lb/lbvector.h>
 #include <melee/pl/player.h>
-#include <Runtime/platform.h>
+#include <sysdolphin/baselib/random.h>
 
 void ftMh_FingerBeamEnd_Anim(HSD_GObj* gobj)
 {

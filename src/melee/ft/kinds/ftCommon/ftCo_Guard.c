@@ -1,5 +1,7 @@
 #include "ftCo_Guard.h"
 
+#include <math.h>
+
 #include "ftCo_0C35.h"
 #include "ftCo_Attack1.h"
 #include "ftCo_Attack100.h"
@@ -16,10 +18,6 @@
 #include "ftCo_ShieldBreakFly.h"
 #include "ftCo_SpecialS.h"
 #include "types.h"
-
-#include <math.h>
-#include <sysdolphin/baselib/gobj.h>
-#include <sysdolphin/baselib/jobj.h>
 #include <melee/ef/eflib.h>
 #include <melee/ef/efsync.h>
 #include <melee/ft/fighter.h>
@@ -38,6 +36,8 @@
 #include <melee/lb/lb_00CE.h>
 #include <melee/pl/player.h>
 #include <melee/pl/plbonuslib.h>
+#include <sysdolphin/baselib/gobj.h>
+#include <sysdolphin/baselib/jobj.h>
 
 /* 091BC4 */ static void ftCo_80091BC4(Fighter* fp);
 /* 091E78 */ static void ftCo_80091E78(Fighter_GObj* gobj, float);

@@ -1,10 +1,11 @@
 #include "ftzeldaspecialn.h"
 
-#include "types.h"
+#include <Runtime/platform.h>
 
-#include "forward.h"
 #include <melee/ft/forward.h>
 
+#include "forward.h"
+#include "types.h"
 #include <dolphin/mtx.h>
 #include <melee/ef/efsync.h>
 #include <melee/ft/fighter.h>
@@ -18,7 +19,6 @@
 #include <melee/ft/kinds/ftCommon/ftCo_Fall.h>
 #include <melee/ft/kinds/ftCommon/inlines.h>
 #include <melee/ft/types.h>
-#include <Runtime/platform.h>
 
 void ftZd_SpecialN_8013A830(HSD_GObj* gobj)
 {

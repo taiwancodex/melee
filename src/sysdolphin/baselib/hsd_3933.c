@@ -1,9 +1,9 @@
 #include "hsd_3933.h"
 
+#include <string.h>
+
 #include "hsd_392C.h"
 #include "random.h"
-
-#include <string.h>
 #include <dolphin/mcc.h>
 #include <dolphin/os.h>
 

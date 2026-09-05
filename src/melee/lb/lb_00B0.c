@@ -1,7 +1,6 @@
 #include "lb_00B0.h"
 
 #include "sc/types.h" // IWYU pragma: keep
-
 #include <dolphin/mtx.h>
 #include <sysdolphin/baselib/aobj.h>
 #include <sysdolphin/baselib/dobj.h> // IWYU pragma: keep

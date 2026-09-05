@@ -1,23 +1,27 @@
 #include "gmtoulib.h"
 
-#include "gm_1601.h"
-#include "gm_unsplit.h"
-#include "gmmain_lib.h"
-
-#include "gmtoulib.static.h"
-
-#include "types.h"
-
-#include <placeholder.h>
-
-#include "forward.h"
 #include <melee/ft/forward.h>
 #include <melee/pl/forward.h>
 #include <sysdolphin/baselib/forward.h>
 
 #include <m2c_macros.h>
+#include <placeholder.h>
 #include <stdio.h>
 #include <string.h>
+
+#include "forward.h"
+#include "gm_1601.h"
+#include "gm_unsplit.h"
+#include "gmmain_lib.h"
+#include "gmtoulib.static.h"
+#include "types.h"
+#include <melee/lb/lblanguage.h>
+#include <melee/lb/lbspdisplay.h>
+#include <melee/mn/mnmain.h>
+#include <melee/mn/mnname.h>
+#include <melee/mn/mnstagesel.h>
+#include <melee/pl/player.h>
+#include <melee/sc/types.h>
 #include <sysdolphin/baselib/cobj.h>
 #include <sysdolphin/baselib/controller.h>
 #include <sysdolphin/baselib/debug.h>
@@ -34,13 +38,6 @@
 #include <sysdolphin/baselib/random.h>
 #include <sysdolphin/baselib/sislib.h>
 #include <sysdolphin/baselib/wobj.h>
-#include <melee/lb/lblanguage.h>
-#include <melee/lb/lbspdisplay.h>
-#include <melee/mn/mnmain.h>
-#include <melee/mn/mnname.h>
-#include <melee/mn/mnstagesel.h>
-#include <melee/pl/player.h>
-#include <melee/sc/types.h>
 
 int lbl_804D663C;
 u8 lbl_804D6638[0x4];

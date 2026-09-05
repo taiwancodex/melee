@@ -19,18 +19,16 @@ typedef struct {
     } content;
 } PerfDispItem;
 
+#include <math.h>
+#include <string.h>
+
 #include "cobj.h"
 #include "gobjobject.h"
 #include "mtx.h"
-
 #include "particle.static.h"
-
 #include "psappsrt.h"
 #include "psstructs.h"
 #include "random.h"
-
-#include <math.h>
-#include <string.h>
 #include <dolphin/gx.h>
 #include <dolphin/os.h>
 

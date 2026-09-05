@@ -1,5 +1,7 @@
 #include "gmcameramode.h"
 
+#include <melee/lb/forward.h>
+
 #include "gm_1A3F.h"
 #include "gm_1B03.h"
 #include "gm_unsplit.h"
@@ -7,9 +9,6 @@
 #include "gmmain_lib.h"
 #include "gmvsmelee.h"
 #include "types.h"
-
-#include <melee/lb/forward.h>
-
 #include <dolphin/os.h>
 #include <melee/lb/lbaudio_ax.h>
 #include <melee/lb/lbcardnew.h>
