@@ -27,28 +27,27 @@ target order but breaks 45 other instructions — proof, not a fix).
 
 ## Active targets (permuter grinds)
 
-### lbColl_80006094 — DROPPED (upstream collision)
-Open PR #3315 "Work on lbcollision" (2026-09-04) does deep hand-matching on
-this exact function (+236/-395, many hunks inside the body). Our grind was
-plateaued at best 987 anyway; revisit only if #3315 stalls or closes.
+### 2026-09-05 morning: the upstream wave took all three prior targets
+- ftCo_80095EFC — MATCHED UPSTREAM (#3325, 01:24). The "cleanup" PR grew
+  into a full match hours after we vetted it as non-conflicting.
+- lbColl_80006094 — MATCHED UPSTREAM (#3315, 01:10), as predicted.
+- fn_80180630 (gmregclear) — CLAIMED by open WIP PR #3338, which splits the
+  whole unit into gm_17C0/17E4/17EB/180A/181A. Grind dropped.
+- fn_8018AA74 (gmtoulib) — CLAIMED by open PR #3329 (body hunks inside the
+  exact function). Grind dropped.
+Lesson: at this upstream pace, re-check open PRs before every relaunch.
 
-### _tyDisplay_80319994 — MATCHED UPSTREAM (#3318, 2026-09-04 21:41)
-The permuter-rewriter parking turned out moot; upstream matched it while we
-worked elsewhere. The TU-pipeline fixes developed for it remain in use.
+### fn_8019D1BC (gmtou_2) — NEW grind, validated
+99.828%, no upstream activity. Gate 1 exact; 15-hunk real delta.
 
-### fn_8018AA74 (gmtoulib) — NEW 3rd grind, validated
-99.857%, no upstream activity. Gate 1 exact on the first try with the full
-fixed pipeline (MUST_MATCH + __FILE__ basename); 8-hunk real delta is a
-stack-frame layout difference — good --stack-diffs fodder.
+### fn_80179990 (gmresultplayer) — NEW grind, validated
+99.255%, no upstream activity; fn_8017AA78 in the same unit is also open.
+Gate 1 exact; 10-hunk real delta. Both jobs first-try validated with the
+full fixed pipeline.
 
-### ftCo_80095EFC — CONTINUED (PR #3325 is cleanup only)
-Open PR #3325 "Work on ftCo_ItemThrow" removes 6 dead constant
-declarations; it does not touch the function body. Keep grinding unless a
-body-level PR appears.
-
-### fn_80180630 (gmregclear) — CONTINUED, top remaining target
-99.966% — highest non-colliding near-miss in the project. PR #2955
-(gmregclear stage tables) touches other gm files, not this function.
+### Rejected this round (asserts in body): mnsnap fn_802545C4 (13 asserts),
+gmstaffroll fn_801AB200 (2 asserts). mnstagesw mnStageSw_80236CBC remains
+assert-blocked from earlier.
 
 ### gm_80182174 (gmregclear) — PARKED, 5-hunk residual
 After fixing the base (see TU pipeline notes below), the UNSTRIPPED cpp TU
