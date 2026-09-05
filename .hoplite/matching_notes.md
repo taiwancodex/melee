@@ -27,11 +27,28 @@ target order but breaks 45 other instructions — proof, not a fix).
 
 ## Active targets (permuter grinds)
 
-### _Toy_8030E110 — DROPPED (upstream collision)
-Open PR #3310 "Work on toy" (2026-09-04) hand-matches _Toy_8030E110 and the
-other toy near-misses (decl reorders + `uintptr_t keys` hoists — the same
-variant family the permuter explores). Grinding it would duplicate an active
-upstream PR; revisit only if #3310 stalls or closes unmatched.
+### lbColl_80006094 — DROPPED (upstream collision)
+Open PR #3315 "Work on lbcollision" (2026-09-04) does deep hand-matching on
+this exact function (+236/-395, many hunks inside the body). Our grind was
+plateaued at best 987 anyway; revisit only if #3315 stalls or closes.
+
+### _tyDisplay_80319994 — MATCHED UPSTREAM (#3318, 2026-09-04 21:41)
+The permuter-rewriter parking turned out moot; upstream matched it while we
+worked elsewhere. The TU-pipeline fixes developed for it remain in use.
+
+### fn_8018AA74 (gmtoulib) — NEW 3rd grind, validated
+99.857%, no upstream activity. Gate 1 exact on the first try with the full
+fixed pipeline (MUST_MATCH + __FILE__ basename); 8-hunk real delta is a
+stack-frame layout difference — good --stack-diffs fodder.
+
+### ftCo_80095EFC — CONTINUED (PR #3325 is cleanup only)
+Open PR #3325 "Work on ftCo_ItemThrow" removes 6 dead constant
+declarations; it does not touch the function body. Keep grinding unless a
+body-level PR appears.
+
+### fn_80180630 (gmregclear) — CONTINUED, top remaining target
+99.966% — highest non-colliding near-miss in the project. PR #2955
+(gmregclear stage tables) touches other gm files, not this function.
 
 ### gm_80182174 (gmregclear) — PARKED, 5-hunk residual
 After fixing the base (see TU pipeline notes below), the UNSTRIPPED cpp TU
