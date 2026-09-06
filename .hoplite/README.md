@@ -36,6 +36,43 @@ split originals live in `build/GALE01/obj/`, built objects in
         build/GALE01/obj/<unit>.o [ctx]        # aligned per-function diff
     python3 .hoplite/unit_diff.py <built.o> <orig.o>  # whole-unit diff
 
+## Automation (2026-09-06)
+
+    build/hoplite/pvenv/bin/python3 .hoplite/autopilot_cycle.py
+        # One keep-alive cycle: poll active grinds (perm_*/autopilot.on),
+        # relaunch dead ones, upstream-check every 6th cycle, flag score-0.
+        # Invoke repeatedly to hold the turn open; permuter PATH is durable
+        # via /usr/local/bin symlinks installed by the setup script.
+    build/hoplite/pvenv/bin/python3 .hoplite/upstream_check.py <base_sha>
+        # Function-level collision check of active jobs vs new commits
+        # (one compare call) and open PRs. Prints CLAIMED/MATCHED -> DROP.
+    build/hoplite/pvenv/bin/python3 .hoplite/build_fleet_job.py \
+        <jobdir> <src.c> <func> <split_unit> '<start_regex>'
+        # End-to-end job: dtk extraction + fidelity check, system-cpp TU
+        # with MWERKS/POWERPC/MUST_MATCH parity and basename __FILE__,
+        # callee-fixpoint strip, base.c/base_check.c emission.
+    build/hoplite/pvenv/bin/python3 .hoplite/gate_fleet_job.py \
+        <jobdir> <func> build/GALE01/src/<unit>.o
+        # Mandatory gates: gate1 (stripped TU == full-file codegen) must be
+        # 0 hunks; gate2 is the real delta for the permuter.
+
+Known limitations: TU targets whose files declare sdata/sbss variables via
+`__declspec(...)` cannot be ground — pycparser cannot parse the keyword and
+textually stripping it flips SDA addressing (166-hunk gate failure on
+mnvibration). Fixing this requires a decomp-permuter parser+printer patch
+that round-trips __declspec. Assert-bearing function bodies cannot match
+through single-TU stripping (string-pool offsets shift); work those on the
+full file instead.
+
+## Upstream sync (the established loop)
+
+Re-check before every relaunch: at the current upstream pace, open PRs
+claim functions within hours. Sync is: fetch `commit/<sha>.patch` from
+doldecomp/melee for each new commit in chronological order, `git am
+--keep-non-patch` (clearing any stale `.git/rebase-apply` first), `ninja`,
+verify `sha1sum build/GALE01/main.dol` equals the original, re-run
+triage, then relaunch only jobs `upstream_check.py` reports clear.
+
 ## Function matching workflow (decomp-permuter)
 
 Permuter jobs are three-part: a byte-faithful single-function target
