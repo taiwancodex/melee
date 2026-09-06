@@ -27,13 +27,32 @@ target order but breaks 45 other instructions — proof, not a fix).
 
 ## Active targets (permuter grinds)
 
-### 2026-09-05 afternoon: pool at 23 units / 36 functions
-- fn_80179990 (gmresultplayer) — CLAIMED by open PR #3343 (body hunks in the
-  exact function). Grind dropped.
-- fn_8018AA74 (gmtoulib) — #3329 merged but only IMPROVED it to 99.949%;
-  left as the contributor's active territory. Same for fn_80180630
-  (gmregclear, #3338 split left it at 99.966%). Both avoided as
-  just-touched units whose authors typically follow up.
+### 2026-09-06: the endgame pool and the fleet attempt
+Upstream's 24h blitz (19 commits, PRs #3342-#3362) matched every function we
+ever targeted, including our two active grinds (#3356 gmtou_2, #3346
+mnruleplus within hours of launch) and the 3-day fn_80180630 chase (#3348).
+mnStageSw_80236CBC — rejected by us as assert-blocked for single-TU
+stripping — was matched by a human working the full file (#3352).
+PR #3358 is an automated harness session: we are not the only bot racing.
+
+Pool: 13 units / 21 functions. Contested or blocked: psdisp (#3344 open),
+mnItemSw (#3359), lbSnap (#3363), ifstock/gmtoulib/hsd_3B34/hsd_3B5C/
+mndiagram/grbigblue (just-touched), mnsnap fn_802545C4 + gmstaffroll
+(asserts), mnnamenew (SJIS gate fail).
+
+Fleet attempt (user asked for more agents): five jobs vetted, three passed
+both gates (mnVibration_HandleInput, mnVibration_Think, mnSnap_80257F24);
+mnnamenew failed gate 1 (SJIS + assert pool), grbigblue has a
+cpp-emission artifact. mnVibration_HandleInput/Think CRASH decomp-permuter
+silently during base construction even solo with -j1 — same rewriter-bug
+family as tydisplay, crash form. Net fleet: mnSnap_80257F24 alone.
+
+Post-mortem, why upstream wins: we triage the same near-miss list the
+expert humans triage; random source permutation loses to
+hypothesis-driven iteration on MWCC quirks; and single-TU stripping
+structurally cannot touch assert-bearing functions. The realistic value of
+this workspace is the validated pipeline + tools on this branch, plus
+grinding genuinely uncontested leftovers.
 
 ### fn_8019D1BC (gmtou_2) — CONTINUED grind
 99.828%, still unclaimed (separate unit from gmtoulib). Session floor 140.
