@@ -45,6 +45,12 @@ cpp = subprocess.run(
 if cpp.returncode != 0:
     sys.exit(f"cpp failed: {cpp.stderr.decode()[:200]}")
 out = re.sub(rb'__assert\("[^"]*/', b'__assert("', cpp.stdout)
+# NOTE: do NOT strip __declspec(...) here. Textual removal moves sdata
+# variables out of .sdata, flipping r13/SDA21 addressing to lis/addi and
+# diverging the whole function (gate 1 catches it: 166 hunks on mnvibration).
+# TUs that declare sdata/sbss variables need a decomp-permuter parser+printer
+# patch that round-trips __declspec; until then, choose targets whose TUs
+# carry no __declspec.
 with open(f"{jobdir}/base_raw.c", "wb") as f:
     f.write(out)
 
